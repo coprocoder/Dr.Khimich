@@ -44,6 +44,9 @@ const HomeIntroBody = () => {
         align="center"
         color="text.primary"
         gutterBottom
+        sx={{
+          fontWeight: "bold",
+        }}
       >
         Создаём интерьер вашей мечты
       </Typography>
