@@ -17,7 +17,7 @@ const HomeIntro = () => {
         height: "100vh",
         backgroundImage: `
           ${bgGradient},
-          url(${process.env.PUBLIC_URL + "/static/images/woodman.jpg"})`,
+          url(${"/static/images/woodman.jpg"})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
