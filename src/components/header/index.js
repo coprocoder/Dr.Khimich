@@ -39,7 +39,7 @@ const PageHeader = () => {
           <Link
             variant="button"
             color="text.primary"
-            href={`${process.env.PUBLIC_URL}/#`}
+            href={`${process.env.PUBLIC_URL}/`}
             sx={{my: 1, mx: 1.5}}
           >
             Support

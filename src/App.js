@@ -11,11 +11,14 @@ const Pricing = loadable(() => import("./pages/pricing"), {
   fallback: <CircularProgress />,
 });
 
+const Notfound = () => <div>not found</div>;
+
 function App() {
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
-      <Route path="/pricing" element={<Pricing />} />
+      <Route exact path="/pricing" element={<Pricing />} />
+      <Route element={<Notfound />} />
     </Routes>
   );
 }
