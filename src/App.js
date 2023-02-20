@@ -1,3 +1,4 @@
+import React from "react";
 import {Routes, Route} from "react-router-dom";
 import loadable from "@loadable/component";
 import {CircularProgress} from "@mui/material";

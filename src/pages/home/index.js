@@ -1,3 +1,4 @@
+import React from "react";
 import PageFooter from "../../components/footer";
 import PageHeader from "../../components/header";
 import GoodsPreview from "./goods";
