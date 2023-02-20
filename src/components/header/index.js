@@ -1,15 +1,14 @@
 import React from "react";
 import AppBar from "@mui/material/AppBar";
-import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "@mui/material/Link";
 import {Slide, useMediaQuery, useScrollTrigger, useTheme} from "@mui/material";
 
-import DrawerComponent from "./drawer";
-
 import {ReactComponent as LogoMin} from "../../assets/logo_min.svg";
 import {ReactComponent as LogoMax} from "../../assets/logo_max.svg";
 import "./header.scss";
+import HeaderMenuDrawer from "./menu/drawer";
+import HeaderMenuFull from "./menu/lineMenu";
 
 const HideOnScroll = (props) => {
   const {children, window} = props;
@@ -52,63 +51,10 @@ const Header = (props) => {
             {isMobile ? <LogoMin /> : <LogoMax />}
           </Link>
 
-          {isMobile ? <DrawerComponent /> : <HeaderMenu />}
+          {isMobile ? <HeaderMenuDrawer /> : <HeaderMenuFull />}
         </Toolbar>
       </AppBar>
     </HideOnScroll>
-  );
-};
-
-const HeaderMenu = () => {
-  // const useStyles = makeStyles((theme) => ({
-  //   link: {
-  //     textDecoration: "none",
-  //     color: "white",
-  //     fontSize: "20px",
-  //     marginLeft: theme.spacing(20),
-  //     borderBottom: "1px solid transparent",
-  //     "&:hover": {
-  //       color: "yellow",
-  //       borderBottom: "1px solid white",
-  //     },
-  //   },
-  // }));
-
-  // const classes = useStyles();
-
-  return (
-    <>
-      <nav>
-        <Link
-          variant="button"
-          color="text.primary"
-          href={` ${process.env.PUBLIC_URL}/`}
-          sx={{my: 1, mx: 1.5}}
-          // className={classes.link}
-        >
-          Home
-        </Link>
-        <Link
-          variant="button"
-          color="text.primary"
-          href={`${process.env.PUBLIC_URL}/#/pricing`}
-          sx={{my: 1, mx: 1.5}}
-        >
-          Pricing
-        </Link>
-        <Link
-          variant="button"
-          color="text.primary"
-          href={`${process.env.PUBLIC_URL}/#`}
-          sx={{my: 1, mx: 1.5}}
-        >
-          Support
-        </Link>
-      </nav>
-      <Button href="#" variant="outlined" sx={{my: 1, mx: 1.5}}>
-        GOODS
-      </Button>
-    </>
   );
 };
 
