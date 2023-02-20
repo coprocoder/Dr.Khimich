@@ -2,16 +2,12 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import TariffGrid from "./tariffGrid";
-import HeaderBody from "../../components/header";
-import PageFooter from "../../components/footer";
 
 const PricingPage = () => {
   return (
     <>
-      <HeaderBody />
       <PricingIntro />
       <TariffGrid />
-      <PageFooter />
     </>
   );
 };

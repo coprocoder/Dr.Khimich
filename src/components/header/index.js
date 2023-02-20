@@ -1,21 +1,18 @@
-import React, {useEffect, useState, useRef, useContext} from "react";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import {Slide, useScrollTrigger} from "@mui/material";
+import {Slide, useMediaQuery, useScrollTrigger, useTheme} from "@mui/material";
+
+import DrawerComponent from "./drawer";
 
 import {ReactComponent as LogoMin} from "../../assets/logo_min.svg";
 import {ReactComponent as LogoMax} from "../../assets/logo_max.svg";
-
 import "./header.scss";
 
 const HideOnScroll = (props) => {
   const {children, window} = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
   });
@@ -28,20 +25,13 @@ const HideOnScroll = (props) => {
 };
 
 const Header = (props) => {
-  const [isNarrow, setNarrow] = useState(window.innerWidth < 960);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setNarrow(window.innerWidth < 960);
-    };
-    window.addEventListener("resize", handleResize);
-    return window.addEventListener("resize", null);
-  }, []);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <HideOnScroll {...props}>
       <AppBar
-        position="fixed"
+        position="sticky"
         color="default"
         elevation={0}
         sx={{
@@ -55,47 +45,70 @@ const Header = (props) => {
           <Link
             variant="body2"
             color="text.primary"
-            href={` ${process.env.PUBLIC_URL}/#`}
+            href={` ${process.env.PUBLIC_URL}/`}
             sx={{flexGrow: 1, my: 1, mx: 1.5}}
             className="header-logo"
           >
-            {isNarrow ? <LogoMin /> : <LogoMax />}
+            {isMobile ? <LogoMin /> : <LogoMax />}
           </Link>
 
-          <nav>
-            <Link
-              variant="button"
-              color="text.primary"
-              href={` ${process.env.PUBLIC_URL}/#`}
-              sx={{my: 1, mx: 1.5}}
-            >
-              Home
-            </Link>
-            <Link
-              variant="button"
-              color="text.primary"
-              href={`${process.env.PUBLIC_URL}/#/pricing`}
-              sx={{my: 1, mx: 1.5}}
-            >
-              Pricing
-            </Link>
-            <Link
-              variant="button"
-              color="text.primary"
-              href={`${process.env.PUBLIC_URL}/#`}
-              sx={{my: 1, mx: 1.5}}
-            >
-              Support
-            </Link>
-          </nav>
-          <Button href="#" variant="outlined" sx={{my: 1, mx: 1.5}}>
-            GOODS
-          </Button>
+          {isMobile ? <DrawerComponent /> : <HeaderMenu />}
         </Toolbar>
-
-        <div className="header-activateArea" />
       </AppBar>
     </HideOnScroll>
+  );
+};
+
+const HeaderMenu = () => {
+  // const useStyles = makeStyles((theme) => ({
+  //   link: {
+  //     textDecoration: "none",
+  //     color: "white",
+  //     fontSize: "20px",
+  //     marginLeft: theme.spacing(20),
+  //     borderBottom: "1px solid transparent",
+  //     "&:hover": {
+  //       color: "yellow",
+  //       borderBottom: "1px solid white",
+  //     },
+  //   },
+  // }));
+
+  // const classes = useStyles();
+
+  return (
+    <>
+      <nav>
+        <Link
+          variant="button"
+          color="text.primary"
+          href={` ${process.env.PUBLIC_URL}/`}
+          sx={{my: 1, mx: 1.5}}
+          // className={classes.link}
+        >
+          Home
+        </Link>
+        <Link
+          variant="button"
+          color="text.primary"
+          href={`${process.env.PUBLIC_URL}/#/pricing`}
+          sx={{my: 1, mx: 1.5}}
+        >
+          Pricing
+        </Link>
+        <Link
+          variant="button"
+          color="text.primary"
+          href={`${process.env.PUBLIC_URL}/#`}
+          sx={{my: 1, mx: 1.5}}
+        >
+          Support
+        </Link>
+      </nav>
+      <Button href="#" variant="outlined" sx={{my: 1, mx: 1.5}}>
+        GOODS
+      </Button>
+    </>
   );
 };
 
