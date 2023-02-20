@@ -1,13 +1,13 @@
 import React from "react";
 import PageFooter from "../../components/footer";
-import PageHeader from "../../components/header";
+import HeaderBody from "../../components/header";
 import GoodsPreview from "./goods";
 import HomeIntro from "./intro";
 
 const HomePage = () => {
   return (
     <>
-      <PageHeader />
+      <HeaderBody />
       <HomeIntro />
       <GoodsPreview />
       <PageFooter />
