@@ -104,7 +104,7 @@ const GoodsGrid = () => {
             <Card>
               <CardMedia
                 sx={{height: 140}}
-                image={"/static/images/woodman.jpg"}
+                image={process.env.PUBLIC_URL + "/static/images/woodman.jpg"}
                 title="green iguana"
               />
               <CardContent>
