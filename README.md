@@ -9,12 +9,6 @@
 	<li>MaterialUI</li>
  </ul>
 
-Макет: https://marvelapp.com/prototype/ifc07ih/screen/88547090/handoff
-
-## ЗАПУСК
-
-npm start (или yarn)
-
 ## УСТАНОВКА
 
 Для проверки того, что node.js установлен, выполните
@@ -30,21 +24,22 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt install nodejs
 sudo apt install npm
-git clone https://github.com/coprocoder/vue-todo.git
+git clone https://coprocoder.github.io/WoodWorkshop/
 ```
 
 ### Установка NodeJS на Windows
 
 - Скачайте [установочный файл](https://nodejs.org), запустите его и выполните все шаги установки.
-- Скачайте исходный код приложения из репозитория:
+
+### Установка проекта
 
 ```
-git clone https://github.com/coprocoder/SportVokrug.git
-```
 
-### Установка зависимостей проекта
-
-```
+git clone https://github.com/coprocoder/WoodWorkshop.git
 cd <путь до папки проекта>
 npm install (или yarn)
 ```
+
+## ЗАПУСК
+
+npm start (или yarn)
