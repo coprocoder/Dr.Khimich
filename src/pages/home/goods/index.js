@@ -7,46 +7,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import {CardMedia} from "@mui/material";
-
-const tiers = [
-  {
-    title: "Free",
-    price: "0",
-    description: [
-      "10 users included",
-      "2 GB of storage",
-      "Help center access",
-      "Email support",
-    ],
-    buttonText: "Sign up for free",
-    buttonVariant: "outlined",
-  },
-  {
-    title: "Pro",
-    subheader: "Most popular",
-    price: "15",
-    description: [
-      "20 users included",
-      "10 GB of storage",
-      "Help center access",
-      "Priority email support",
-    ],
-    buttonText: "Get started",
-    buttonVariant: "contained",
-  },
-  {
-    title: "Enterprise",
-    price: "30",
-    description: [
-      "50 users included",
-      "30 GB of storage",
-      "Help center access",
-      "Phone & email support",
-    ],
-    buttonText: "Contact us",
-    buttonVariant: "outlined",
-  },
-];
+import {goodsContext} from "./goodsConfig";
 
 const GoodsPreview = () => {
   return (
@@ -92,7 +53,7 @@ const GoodsGrid = () => {
   return (
     <Container maxWidth="md" component="main">
       <Grid container spacing={5} alignItems="flex-end">
-        {tiers.map((tier) => (
+        {goodsContext.map((tier) => (
           // Enterprise card is full width at sm breakpoint
           <Grid
             item
@@ -109,11 +70,10 @@ const GoodsGrid = () => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Lizard
+                  {tier.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                  {tier.description}
                 </Typography>
               </CardContent>
               <CardActions>
