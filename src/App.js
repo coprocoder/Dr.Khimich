@@ -9,7 +9,7 @@ const Home = loadable(() => import("./pages/home"), {
   fallback: <CircularProgress />,
 });
 
-const Pricing = loadable(() => import("./pages/pricing"), {
+const GoodsGallery = loadable(() => import("./pages/gallery"), {
   fallback: <CircularProgress />,
 });
 
@@ -22,7 +22,8 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/pricing" element={<Pricing />} />
+        <Route path="/goods" element={<GoodsGallery />} />
+        {/* <Route path="/pricing" element={<Pricing />} /> */}
         <Route element={<Notfound />} />
       </Routes>
 

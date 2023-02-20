@@ -1,18 +1,18 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import TariffGrid from "./tariffGrid";
+import {GoodsGrid} from "../gallery/goods";
 
-const PricingPage = () => {
+const GoodsPreview = () => {
   return (
     <>
-      <PricingIntro />
-      <TariffGrid />
+      <GoodsIntro />
+      <GoodsGrid count={3} />
     </>
   );
 };
 
-const PricingIntro = () => {
+const GoodsIntro = () => {
   return (
     <Container
       disableGutters
@@ -43,4 +43,4 @@ const PricingIntro = () => {
   );
 };
 
-export default PricingPage;
+export default GoodsPreview;

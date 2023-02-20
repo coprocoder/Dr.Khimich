@@ -1,5 +1,5 @@
 import InfoIcon from "@mui/icons-material/Info";
-import SellIcon from "@mui/icons-material/Sell";
+// import SellIcon from "@mui/icons-material/Sell";
 import CategoryIcon from "@mui/icons-material/Category";
 
 export const menuConfig = {
@@ -8,11 +8,11 @@ export const menuConfig = {
     label: "О нас",
     icon: InfoIcon,
   },
-  pricing: {
-    link: `${process.env.PUBLIC_URL}/#/pricing`,
-    label: "Цены",
-    icon: SellIcon,
-  },
+  // pricing: {
+  //   link: `${process.env.PUBLIC_URL}/#/pricing`,
+  //   label: "Цены",
+  //   icon: SellIcon,
+  // },
   goods: {
     link: `${process.env.PUBLIC_URL}/#/goods`,
     label: "Товары",

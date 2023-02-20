@@ -7,9 +7,9 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import {CardMedia} from "@mui/material";
-import {goodsContext} from "./goodsConfig";
+import {goodsConfig} from "./goodsConfig";
 
-const GoodsPreview = () => {
+const GoodsGallery = () => {
   return (
     <>
       <GoodsIntro />
@@ -33,7 +33,7 @@ const GoodsIntro = () => {
         color="text.primary"
         gutterBottom
       >
-        Pricing
+        Products
       </Typography>
       <Typography
         variant="h5"
@@ -49,11 +49,14 @@ const GoodsIntro = () => {
   );
 };
 
-const GoodsGrid = () => {
+export const GoodsGrid = ({count}) => {
+  const gridItems = count ? goodsConfig.slice(0, count) : goodsConfig;
+  console.log({gridItems});
+
   return (
     <Container maxWidth="md" component="main">
       <Grid container spacing={5} alignItems="flex-end">
-        {goodsContext.map((tier) => (
+        {gridItems.map((tier) => (
           // Enterprise card is full width at sm breakpoint
           <Grid
             item
@@ -89,4 +92,4 @@ const GoodsGrid = () => {
   );
 };
 
-export default GoodsPreview;
+export default GoodsGallery;
