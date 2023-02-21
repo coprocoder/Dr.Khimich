@@ -1,10 +1,10 @@
 import React from "react";
-import GoodsGallery from "./goods";
+import ProductsGallery from "./products";
 
 const GalleryPage = () => {
   return (
     <>
-      <GoodsGallery />
+      <ProductsGallery />
     </>
   );
 };

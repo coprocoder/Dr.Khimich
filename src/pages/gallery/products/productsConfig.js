@@ -1,14 +1,14 @@
-const goodsTemplate = [
+const productsTemplate = [
   {
     title: "First product",
     description: "Good 1",
-    buttonText: "Sign up for free",
+    buttonText: "View",
     buttonVariant: "outlined",
   },
   {
     title: "Second product",
     description: "Good 2",
-    buttonText: "Get started",
+    buttonText: "Profit",
     buttonVariant: "contained",
   },
   {
@@ -25,18 +25,18 @@ const goodsTemplate = [
   },
 ];
 
-export const goodsConfig = [
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
-  ...goodsTemplate,
+export const productsConfig = [
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
+  ...productsTemplate,
 ];  

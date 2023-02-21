@@ -13,24 +13,24 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import {goodsConfig} from "./goodsConfig";
+import {productsConfig} from "./productsConfig";
 
-const GoodsGallery = () => {
+const ProductsGallery = () => {
   return (
     <>
-      <GoodsIntro />
-      <GoodsGrid />
+      <ProductsIntro />
+      <ProductsGrid />
     </>
   );
 };
 
-const GoodsIntro = () => {
+export const ProductsIntro = () => {
   return (
     <Container
       disableGutters
       maxWidth="sm"
       component="main"
-      sx={{py: 6, px: 1}}
+      sx={{py: 6, px: 2}}
     >
       <Typography
         component="h1"
@@ -55,9 +55,9 @@ const GoodsIntro = () => {
   );
 };
 
-export const GoodsGrid = ({count}) => {
+export const ProductsGrid = ({count}) => {
   const [page, setPage] = useState(1);
-  const gridItems = count ? goodsConfig.slice(0, count) : goodsConfig;
+  const gridItems = count ? productsConfig.slice(0, count) : productsConfig;
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -71,8 +71,8 @@ export const GoodsGrid = ({count}) => {
   return (
     <Container maxWidth="md" component="main">
       <Grid container spacing={5}>
-        {gridItems.slice(page, page + numItemsOnPage).map((item, i) => (
-          <Grid item key={i} xs={12} sm={4} md={4} >
+        {gridItems.slice(page - 1, page + numItemsOnPage - 1).map((item, i) => (
+          <Grid item key={i} xs={12} sm={4} md={4}>
             <Card>
               <CardMedia
                 sx={{height: 140}}
@@ -102,21 +102,23 @@ export const GoodsGrid = ({count}) => {
         alignItems="center"
         sx={{my: 5}}
       >
-        <Pagination
-          count={Math.ceil(gridItems.length / numItemsOnPage)}
-          onChange={handleChangePage}
-          size="large"
-          variant="outlined"
-          color="primary"
-          shape="rounded"
-          defaultPage={1}
-          page={page}
-          siblingCount={1}
-          boundaryCount={2}
-        />
+        {gridItems.length > numItemsOnPage && (
+          <Pagination
+            count={Math.ceil(gridItems.length / numItemsOnPage)}
+            onChange={handleChangePage}
+            size="large"
+            variant="outlined"
+            color="primary"
+            shape="rounded"
+            defaultPage={1}
+            page={page}
+            siblingCount={1}
+            boundaryCount={2}
+          />
+        )}
       </Box>
     </Container>
   );
 };
 
-export default GoodsGallery;
+export default ProductsGallery;

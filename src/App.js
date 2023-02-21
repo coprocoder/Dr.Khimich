@@ -5,11 +5,11 @@ import {CircularProgress} from "@mui/material";
 import Header from "./components/header";
 import PageFooter from "./components/footer";
 
-const Home = loadable(() => import("./pages/home"), {
+const HomePage = loadable(() => import("./pages/home"), {
   fallback: <CircularProgress />,
 });
 
-const GoodsGallery = loadable(() => import("./pages/gallery"), {
+const GalleryPage = loadable(() => import("./pages/gallery"), {
   fallback: <CircularProgress />,
 });
 
@@ -21,8 +21,8 @@ function App() {
       <Header />
 
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/goods" element={<GoodsGallery />} />
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         {/* <Route path="/pricing" element={<Pricing />} /> */}
         <Route element={<Notfound />} />
       </Routes>

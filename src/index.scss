@@ -1,5 +1,5 @@
 :root {
-    --primary: hsl(180, 33%, 30%);
+    --primary: hsl(10, 33%, 30%);
     --primarySecond: hsl(180, 33%, 50%);
 
     --bgPrimary: rgba(245, 245, 245);
@@ -57,9 +57,9 @@ body {
 a:-webkit-any-link {
     text-decoration: none;
     cursor: pointer;
-    color: var(--primary);
     transition: all 0.2s ease-in-out;
-    &:hover {
-        color: var(--primarySecond);
-    }
+    // color: var(--primary);
+    // &:hover {
+    //     color: var(--primarySecond);
+    // }
 }

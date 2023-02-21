@@ -17,9 +17,11 @@ import {Close} from "@material-ui/icons";
 
 const useStyles = makeStyles(() => ({
   link: {
-    textDecoration: "none",
-    color: "blue",
     fontSize: "20px",
+    color: "var(--primary)",
+    "&:hover": {
+      color: "var(--primarySecond)",
+    },
   },
   icon: {
     color: "white",

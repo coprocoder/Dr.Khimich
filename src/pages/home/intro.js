@@ -34,8 +34,8 @@ const HomeIntroBody = () => {
       maxWidth="sm"
       component="main"
       sx={{
-        pt: 6,
-        pb: 6,
+        py: 6,
+        px: 2,
         textAlign: "center",
       }}
     >
@@ -57,9 +57,10 @@ const HomeIntroBody = () => {
         color="text.secondary"
         component="p"
       >
-        Студия Дмитрия Крикунова
+        Студия Username
       </Typography>
       <Button
+        href="#/gallery"
         variant="contained"
         sx={{
           mt: 4,

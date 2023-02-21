@@ -13,8 +13,8 @@ export const menuConfig = {
   //   label: "Цены",
   //   icon: SellIcon,
   // },
-  goods: {
-    link: `${process.env.PUBLIC_URL}/#/goods`,
+  products: {
+    link: `${process.env.PUBLIC_URL}/#/products`,
     label: "Товары",
     icon: CategoryIcon,
   },
