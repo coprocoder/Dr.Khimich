@@ -9,11 +9,11 @@ const HomePage = loadable(() => import("./pages/home"), {
   fallback: <CircularProgress />,
 });
 
-const GalleryPage = loadable(() => import("./pages/gallery"), {
+const ProductsGallery = loadable(() => import("./pages/products"), {
   fallback: <CircularProgress />,
 });
 
-const Notfound = () => <div>not found</div>;
+const NotFound = () => <div>not found</div>;
 
 function App() {
   return (
@@ -22,9 +22,8 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<HomePage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
-        {/* <Route path="/pricing" element={<Pricing />} /> */}
-        <Route element={<Notfound />} />
+        <Route path="/products" element={<ProductsGallery />} />
+        <Route element={<NotFound />} />
       </Routes>
 
       <PageFooter />

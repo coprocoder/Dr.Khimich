@@ -60,7 +60,7 @@ const HomeIntroBody = () => {
         Студия Username
       </Typography>
       <Button
-        href="#/gallery"
+        href="#/products"
         variant="contained"
         sx={{
           mt: 4,

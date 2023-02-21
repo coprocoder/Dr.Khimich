@@ -1,5 +1,5 @@
 import React from "react";
-import {ProductsGrid, ProductsIntro} from "../gallery/products";
+import {ProductsGrid, ProductsIntro} from "../products";
 
 const ProductsPreview = () => {
   return (
