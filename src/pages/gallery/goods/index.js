@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -6,7 +6,13 @@ import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import {CardMedia} from "@mui/material";
+import {
+  Box,
+  CardMedia,
+  Pagination,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import {goodsConfig} from "./goodsConfig";
 
 const GoodsGallery = () => {
@@ -24,7 +30,7 @@ const GoodsIntro = () => {
       disableGutters
       maxWidth="sm"
       component="main"
-      sx={{pt: 8, pb: 6}}
+      sx={{py: 6, px: 1}}
     >
       <Typography
         component="h1"
@@ -50,21 +56,23 @@ const GoodsIntro = () => {
 };
 
 export const GoodsGrid = ({count}) => {
+  const [page, setPage] = useState(1);
   const gridItems = count ? goodsConfig.slice(0, count) : goodsConfig;
-  console.log({gridItems});
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
+  const numItemsOnPage = isMobile ? 3 : 6;
+
+  const handleChangePage = (event, value) => {
+    setPage(value);
+  };
 
   return (
     <Container maxWidth="md" component="main">
-      <Grid container spacing={5} alignItems="flex-end">
-        {gridItems.map((tier) => (
-          // Enterprise card is full width at sm breakpoint
-          <Grid
-            item
-            key={tier.title}
-            xs={12}
-            sm={tier.title === "Enterprise" ? 12 : 6}
-            md={4}
-          >
+      <Grid container spacing={5}>
+        {gridItems.slice(page, page + numItemsOnPage).map((item, i) => (
+          <Grid item key={i} xs={12} sm={4} md={4} >
             <Card>
               <CardMedia
                 sx={{height: 140}}
@@ -73,21 +81,40 @@ export const GoodsGrid = ({count}) => {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  {tier.title}
+                  {item.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  {tier.description}
+                  {item.description}
                 </Typography>
               </CardContent>
               <CardActions>
-                <Button fullWidth variant={tier.buttonVariant}>
-                  {tier.buttonText}
+                <Button fullWidth variant={item.buttonVariant}>
+                  {item.buttonText}
                 </Button>
               </CardActions>
             </Card>
           </Grid>
         ))}
       </Grid>
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        sx={{my: 5}}
+      >
+        <Pagination
+          count={Math.ceil(gridItems.length / numItemsOnPage)}
+          onChange={handleChangePage}
+          size="large"
+          variant="outlined"
+          color="primary"
+          shape="rounded"
+          defaultPage={1}
+          page={page}
+          siblingCount={1}
+          boundaryCount={2}
+        />
+      </Box>
     </Container>
   );
 };
