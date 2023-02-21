@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/WoodWorkshop/static/css/main.4d96804b.css",
-    "main.js": "/WoodWorkshop/static/js/main.768e777d.js",
-    "static/js/288.fb317787.chunk.js": "/WoodWorkshop/static/js/288.fb317787.chunk.js",
-    "static/js/25.06acaa78.chunk.js": "/WoodWorkshop/static/js/25.06acaa78.chunk.js",
+    "main.css": "/WoodWorkshop/static/css/main.a93c8f83.css",
+    "main.js": "/WoodWorkshop/static/js/main.ed4ac46c.js",
+    "static/js/966.a87f1069.chunk.js": "/WoodWorkshop/static/js/966.a87f1069.chunk.js",
+    "static/js/25.40fb0193.chunk.js": "/WoodWorkshop/static/js/25.40fb0193.chunk.js",
     "static/js/787.10b9c4c3.chunk.js": "/WoodWorkshop/static/js/787.10b9c4c3.chunk.js",
     "static/js/75.4290cb46.chunk.js": "/WoodWorkshop/static/js/75.4290cb46.chunk.js",
     "static/media/logo_max.svg": "/WoodWorkshop/static/media/logo_max.1759cd37a8d82b4916a7b045376f8b6f.svg",
     "static/media/logo_min.svg": "/WoodWorkshop/static/media/logo_min.895cb49a643505827b8bed13e16230bd.svg",
     "index.html": "/WoodWorkshop/index.html",
-    "main.4d96804b.css.map": "/WoodWorkshop/static/css/main.4d96804b.css.map",
-    "main.768e777d.js.map": "/WoodWorkshop/static/js/main.768e777d.js.map",
-    "288.fb317787.chunk.js.map": "/WoodWorkshop/static/js/288.fb317787.chunk.js.map",
-    "25.06acaa78.chunk.js.map": "/WoodWorkshop/static/js/25.06acaa78.chunk.js.map",
+    "main.a93c8f83.css.map": "/WoodWorkshop/static/css/main.a93c8f83.css.map",
+    "main.ed4ac46c.js.map": "/WoodWorkshop/static/js/main.ed4ac46c.js.map",
+    "966.a87f1069.chunk.js.map": "/WoodWorkshop/static/js/966.a87f1069.chunk.js.map",
+    "25.40fb0193.chunk.js.map": "/WoodWorkshop/static/js/25.40fb0193.chunk.js.map",
     "787.10b9c4c3.chunk.js.map": "/WoodWorkshop/static/js/787.10b9c4c3.chunk.js.map",
     "75.4290cb46.chunk.js.map": "/WoodWorkshop/static/js/75.4290cb46.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d96804b.css",
-    "static/js/main.768e777d.js"
+    "static/css/main.a93c8f83.css",
+    "static/js/main.ed4ac46c.js"
   ]
 }
