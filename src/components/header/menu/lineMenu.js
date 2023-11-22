@@ -1,9 +1,8 @@
 import React from "react";
-import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
+import { Link, Button } from "@mui/material";
+import { makeStyles } from "@mui/styles";
 
 import {menuConfig} from "./config";
-import {makeStyles} from "@material-ui/styles";
 
 const useStyles = makeStyles({
   link: {

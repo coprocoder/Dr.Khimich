@@ -64,7 +64,9 @@ const HomeIntroBody = () => {
         variant="contained"
         sx={{
           mt: 4,
+          px: 4,
           textAlign: "center",
+          background: "var(--primary)"
         }}
       >
         Галерея

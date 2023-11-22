@@ -1,19 +1,13 @@
 import React, {useState} from "react";
-import {
-  Divider,
-  Drawer,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  makeStyles,
-} from "@material-ui/core";
 import {Link} from "react-router-dom";
 
-import MenuIcon from "@material-ui/icons/Menu";
+import {
+  Divider, Drawer, IconButton, List, ListItem, ListItemText, Box, Button, ListItemIcon,
+} from "@mui/material";
+import { makeStyles } from "@mui/styles";
+import Close from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Close";
 import {menuConfig} from "./config";
-import {Box, Button, ListItemIcon} from "@mui/material";
-import {Close} from "@material-ui/icons";
 
 const useStyles = makeStyles(() => ({
   link: {

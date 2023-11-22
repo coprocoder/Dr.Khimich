@@ -1,8 +1,5 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import Container from "@mui/material/Container";
+import { Grid, Typography, Link, Container } from "@mui/material";
 import Copyright from "../copyright";
 
 const footers = [
