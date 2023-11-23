@@ -1,4 +1,4 @@
-@import "./Functions.scss";
+@import "Functions";
 
 html {
     font-size: calcFluidSize(12, 16, 480, 1280);

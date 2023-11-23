@@ -3,13 +3,15 @@ import { Link, Button } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 
 import { menuConfig } from './config'
+import FeedbackDialog from '../../feedback/feedbackDialog'
 
 const HeaderMenuFull = () => {
   return (<>
     <MenuNav />
-    <Button href='#' variant='outlined' sx={{ my: 1, mx: 1.5 }}>
-      Связаться
-    </Button>
+    {/*<Button href='#' variant='outlined' sx={{ my: 1, mx: 1.5 }}>*/}
+    {/*  Связаться*/}
+    {/*</Button>*/}
+    <FeedbackDialog />
   </>)
 }
 
@@ -23,8 +25,7 @@ const MenuNav = () => {
       href={x.link}
       sx={{ my: 1, mx: 1.5, color: 'var(--primary)' }}
       className={classes.link}
-    >
-      {x.label}
+    > {x.label}
     </Link>))}
   </nav>)
 }

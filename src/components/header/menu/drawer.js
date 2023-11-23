@@ -8,6 +8,7 @@ import { makeStyles } from "@mui/styles";
 import Close from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Close";
 import {menuConfig} from "./config";
+import FeedbackDialog from '../../feedback/feedbackDialog'
 
 const useStyles = makeStyles(() => ({
   link: {
@@ -67,9 +68,10 @@ function HeaderMenuDrawer() {
 
           <Divider />
 
-          <Button href="#" variant="outlined" sx={{my: 2}} fullWidth>
-            Связаться
-          </Button>
+          {/*<Button href="#" variant="outlined" sx={{my: 2}} fullWidth>*/}
+          {/*  Связаться*/}
+          {/*</Button>*/}
+          <FeedbackDialog />
         </Box>
       </Drawer>
       <IconButton

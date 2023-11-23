@@ -1,5 +1,14 @@
 {
   "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "browser": true,
+    "es6": true
+  },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
@@ -8,10 +17,17 @@
     "react-hooks"
   ],
   "rules": {
+    "camelcase": "off",
     "eqeqeq": "off",
     "no-unused-vars": "warn",
     "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "off"
-  }
+  },
+  "ignorePatterns": [
+    "/node_modules/*",
+    "/node_modules.private/*",
+    "/build/*"
+  ]
 }
+

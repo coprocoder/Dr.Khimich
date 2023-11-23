@@ -49,7 +49,7 @@ const HomeIntroBody = () => {
           fontWeight: "bold",
         }}
       >
-        Создаём интерьер вашей мечты
+        Такой красивый логотип у вас
       </Typography>
       <Typography
         variant="h5"
@@ -57,7 +57,7 @@ const HomeIntroBody = () => {
         color="text.secondary"
         component="p"
       >
-        Студия Username
+        Хотите свой покажу?
       </Typography>
       <Button
         href="#/products"
