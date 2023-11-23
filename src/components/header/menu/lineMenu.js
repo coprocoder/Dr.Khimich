@@ -8,12 +8,10 @@ import FeedbackDialog from '../../feedback/feedbackDialog'
 const HeaderMenuFull = () => {
   return (<>
     <MenuNav />
-    {/*<Button href='#' variant='outlined' sx={{ my: 1, mx: 1.5 }}>*/}
-    {/*  Связаться*/}
-    {/*</Button>*/}
     <FeedbackDialog />
   </>)
 }
+
 
 const MenuNav = () => {
   const classes = useStyles()
@@ -21,7 +19,6 @@ const MenuNav = () => {
     {Object.values(menuConfig).map((x, i) => (<Link
       key={i}
       variant='button'
-      // color="text.primary"
       href={x.link}
       sx={{ my: 1, mx: 1.5, color: 'var(--primary)' }}
       className={classes.link}
