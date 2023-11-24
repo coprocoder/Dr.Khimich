@@ -13,7 +13,7 @@ const PriceGallery = () => {
     if (priceConfig.length) {
       setGroup(priceConfig[0])
     }
-  }, [])
+  }, [priceConfig.length])
 
   const handleClick = (group) => setGroup(group)
 
