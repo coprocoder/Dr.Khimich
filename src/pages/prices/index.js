@@ -25,13 +25,12 @@ const PriceGallery = () => {
                 onClick={() => handleClick(group)} />
         ))}
       </Stack>
-      <List sx={{ width: '100%', bgcolor: 'background.paper', borderRadius: 2, paddingX: 4 }}>
+      <List sx={{ width: '100%', bgcolor: 'background.paper', borderRadius: 2, padding: 4 }}>
+        <Typography variant={'h5'}>{selectedGroup?.groupName}</Typography>
         {selectedGroup?.itemList.map((item) => (
-          <ListItem key={item.title} disableGutters
-                    secondaryAction={
-                      <Typography>{item.price}</Typography>
-                    }>
+          <ListItem key={item.title} disableGutters>
             <ListItemText primary={item.title} />
+            <Typography>{item.price}</Typography>
           </ListItem>
         ))}
       </List>
