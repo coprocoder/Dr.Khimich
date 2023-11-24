@@ -1,0 +1,11 @@
+.pricelist {
+  display: grid;
+  grid-template-columns: calc(100% - 530px) 500px;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pricelist {
+    grid-template-columns: 100%;
+  }
+}
