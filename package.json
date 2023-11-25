@@ -1,6 +1,6 @@
 {
-  "name": "workshop",
-  "homepage": "Workshop",
+  "name": "wood_workshop",
+  "homepage": "WoodWorkshop",
   "version": "0.0.1",
   "private": true,
   "scripts": {
