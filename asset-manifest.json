@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/WoodWorkshop/static/css/main.a93c8f83.css",
-    "main.js": "/WoodWorkshop/static/js/main.ed4ac46c.js",
-    "static/js/966.a87f1069.chunk.js": "/WoodWorkshop/static/js/966.a87f1069.chunk.js",
-    "static/js/25.40fb0193.chunk.js": "/WoodWorkshop/static/js/25.40fb0193.chunk.js",
-    "static/js/787.10b9c4c3.chunk.js": "/WoodWorkshop/static/js/787.10b9c4c3.chunk.js",
-    "static/js/75.4290cb46.chunk.js": "/WoodWorkshop/static/js/75.4290cb46.chunk.js",
-    "static/media/logo_max.svg": "/WoodWorkshop/static/media/logo_max.1759cd37a8d82b4916a7b045376f8b6f.svg",
-    "static/media/logo_min.svg": "/WoodWorkshop/static/media/logo_min.895cb49a643505827b8bed13e16230bd.svg",
-    "index.html": "/WoodWorkshop/index.html",
-    "main.a93c8f83.css.map": "/WoodWorkshop/static/css/main.a93c8f83.css.map",
-    "main.ed4ac46c.js.map": "/WoodWorkshop/static/js/main.ed4ac46c.js.map",
-    "966.a87f1069.chunk.js.map": "/WoodWorkshop/static/js/966.a87f1069.chunk.js.map",
-    "25.40fb0193.chunk.js.map": "/WoodWorkshop/static/js/25.40fb0193.chunk.js.map",
-    "787.10b9c4c3.chunk.js.map": "/WoodWorkshop/static/js/787.10b9c4c3.chunk.js.map",
-    "75.4290cb46.chunk.js.map": "/WoodWorkshop/static/js/75.4290cb46.chunk.js.map"
+    "main.css": "/Workshop/static/css/main.fa98a125.css",
+    "main.js": "/Workshop/static/js/main.35d0c04c.js",
+    "static/js/92.5bb6cc0b.chunk.js": "/Workshop/static/js/92.5bb6cc0b.chunk.js",
+    "static/js/763.27d0d757.chunk.js": "/Workshop/static/js/763.27d0d757.chunk.js",
+    "static/css/680.b28cf67c.chunk.css": "/Workshop/static/css/680.b28cf67c.chunk.css",
+    "static/js/680.de2ca45c.chunk.js": "/Workshop/static/js/680.de2ca45c.chunk.js",
+    "static/js/787.273204ca.chunk.js": "/Workshop/static/js/787.273204ca.chunk.js",
+    "static/js/75.f1f5fe87.chunk.js": "/Workshop/static/js/75.f1f5fe87.chunk.js",
+    "static/media/logo_max.svg": "/Workshop/static/media/logo_max.1759cd37a8d82b4916a7b045376f8b6f.svg",
+    "static/media/logo_min.svg": "/Workshop/static/media/logo_min.895cb49a643505827b8bed13e16230bd.svg",
+    "index.html": "/Workshop/index.html",
+    "main.fa98a125.css.map": "/Workshop/static/css/main.fa98a125.css.map",
+    "main.35d0c04c.js.map": "/Workshop/static/js/main.35d0c04c.js.map",
+    "92.5bb6cc0b.chunk.js.map": "/Workshop/static/js/92.5bb6cc0b.chunk.js.map",
+    "763.27d0d757.chunk.js.map": "/Workshop/static/js/763.27d0d757.chunk.js.map",
+    "680.b28cf67c.chunk.css.map": "/Workshop/static/css/680.b28cf67c.chunk.css.map",
+    "680.de2ca45c.chunk.js.map": "/Workshop/static/js/680.de2ca45c.chunk.js.map",
+    "787.273204ca.chunk.js.map": "/Workshop/static/js/787.273204ca.chunk.js.map",
+    "75.f1f5fe87.chunk.js.map": "/Workshop/static/js/75.f1f5fe87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a93c8f83.css",
-    "static/js/main.ed4ac46c.js"
+    "static/css/main.fa98a125.css",
+    "static/js/main.35d0c04c.js"
   ]
 }
