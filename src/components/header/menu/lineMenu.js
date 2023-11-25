@@ -29,7 +29,6 @@ const MenuNav = () => {
 
 const useStyles = makeStyles({
   link: {
-    // color: "var(--primary)",
     '&:hover': {
       color: 'var(--primarySecond)',
     },

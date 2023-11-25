@@ -16,7 +16,16 @@ const priceTemplate = [
       { title: 'Третий', price: 3000 },
       { title: 'Четвертый', price: 4000 },
       { title: 'Пятый', price: 5000 },
-      { title: 'Так так так', price: 6000 }
+      { title: 'Так так так', price: 6000 },
+      { title: 'Раз так так', price: 6000 },
+      { title: 'Раз так так', price: 6000 },
+      { title: 'Раз так так', price: 6000 },
+      { title: 'Раз так так', price: 6000 },
+      { title: 'Раз так так', price: 6000 },
+      { title: 'Раз так так', price: 6000 },
+      { title: 'Раз так так', price: 6000 },
+      { title: 'Раз так так', price: 6000 },
+      { title: 'Два так так', price: 6000 }
     ]
   }
 ]
