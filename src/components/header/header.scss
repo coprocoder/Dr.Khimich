@@ -1,9 +1,16 @@
 .header-logo {
-    height: 2rem;
-    margin: 0;
-    svg {
-        height: 100%;
-        width: auto;
-        fill: var(--primary);
-    }
+  height: 2rem;
+  margin: 0;
+
+  svg {
+    height: 100%;
+    width: auto;
+    fill: var(--primary);
+  }
+}
+
+.headerLink {
+  &:hover {
+    color: var(--primarySecond)
+  }
 }

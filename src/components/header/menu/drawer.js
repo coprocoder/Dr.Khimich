@@ -1,44 +1,30 @@
-import React, {useState} from "react";
-import {Link} from "react-router-dom";
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import {
-  Divider, Drawer, IconButton, List, ListItem, ListItemText, Box, Button, ListItemIcon,
-} from "@mui/material";
-import { makeStyles } from "@mui/styles";
-import Close from "@mui/icons-material/Close";
-import MenuIcon from "@mui/icons-material/Close";
-import {menuConfig} from "./config";
+  Divider, Drawer, IconButton, List, ListItem, ListItemText, Box, ListItemIcon
+} from '@mui/material'
+import Close from '@mui/icons-material/Close'
+import MenuIcon from '@mui/icons-material/Close'
+import { menuConfig } from './config'
 import FeedbackDialog from '../../feedback/feedbackDialog'
-
-const useStyles = makeStyles(() => ({
-  link: {
-    fontSize: "20px",
-    color: "var(--primary)",
-    "&:hover": {
-      color: "var(--primarySecond)",
-    },
-  },
-  icon: {
-    color: "white",
-  },
-}));
+import '../header.scss'
 
 function HeaderMenuDrawer() {
-  const classes = useStyles();
-  const [openDrawer, setOpenDrawer] = useState(false);
-  const items = Object.values(menuConfig);
+  const [openDrawer, setOpenDrawer] = useState(false)
+  const items = Object.values(menuConfig)
   return (
     <>
       <Drawer
-        anchor={"right"}
+        anchor={'right'}
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
       >
-        <Box sx={{p: 1}}>
-          <Box sx={{mb: 1}}>
+        <Box sx={{ p: 1 }}>
+          <Box sx={{ mb: 1 }}>
             <IconButton
               onClick={() => setOpenDrawer(!openDrawer)}
-              className={classes.icon}
+              sx={{ color: 'white' }}
             >
               <Close />
             </IconButton>
@@ -48,21 +34,21 @@ function HeaderMenuDrawer() {
 
           <List>
             {items.map((x, i) => {
-              const MenuItemIcon = x.icon;
+              const MenuItemIcon = x.icon
               return (
                 <div key={`menuItem_${i}`}>
                   <ListItem onClick={() => setOpenDrawer(false)}>
                     <ListItemIcon>
-                      <MenuItemIcon sx={{color: "primary.main"}} />
+                      <MenuItemIcon sx={{ color: 'primary.main' }} />
                     </ListItemIcon>
                     <ListItemText>
-                      <Link to={x.link} className={classes.link}>
+                      <Link to={x.link} className={'headerLink'}>
                         {x.label}
                       </Link>
                     </ListItemText>
                   </ListItem>
                 </div>
-              );
+              )
             })}
           </List>
 
@@ -76,11 +62,12 @@ function HeaderMenuDrawer() {
       </Drawer>
       <IconButton
         onClick={() => setOpenDrawer(!openDrawer)}
-        className={classes.icon}
+        sx={{ color: 'white' }}
       >
         <MenuIcon />
       </IconButton>
     </>
-  );
+  )
 }
-export default HeaderMenuDrawer;
+
+export default HeaderMenuDrawer

@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link, Button } from '@mui/material'
-import { makeStyles } from '@mui/styles'
-
+import { Link } from '@mui/material'
 import { menuConfig } from './config'
 import FeedbackDialog from '../../feedback/feedbackDialog'
+import '../header.scss'
 
 const HeaderMenuFull = () => {
   return (<>
@@ -14,25 +13,19 @@ const HeaderMenuFull = () => {
 
 
 const MenuNav = () => {
-  const classes = useStyles()
   return (<nav>
-    {Object.values(menuConfig).map((x, i) => (<Link
-      key={i}
-      variant='button'
-      href={x.link}
-      sx={{ my: 1, mx: 1.5, color: 'var(--primary)' }}
-      className={classes.link}
-    > {x.label}
-    </Link>))}
+    {Object.values(menuConfig).map((x, i) => (
+      <Link
+        key={i}
+        variant='button'
+        href={x.link}
+        sx={{ my: 1, mx: 1.5 }}
+        className={'headerLink'}
+      > {x.label}
+      </Link>
+    ))}
   </nav>)
 }
 
-const useStyles = makeStyles({
-  link: {
-    '&:hover': {
-      color: 'var(--primarySecond)',
-    },
-  },
-})
 
 export default HeaderMenuFull
