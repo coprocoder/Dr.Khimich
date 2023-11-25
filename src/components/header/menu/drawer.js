@@ -18,14 +18,12 @@ function HeaderMenuDrawer() {
       <Drawer
         anchor={'right'}
         open={openDrawer}
-        onClose={() => setOpenDrawer(false)}
-      >
+        onClose={() => setOpenDrawer(false)}>
         <Box sx={{ p: 1 }}>
           <Box sx={{ mb: 1 }}>
             <IconButton
               onClick={() => setOpenDrawer(!openDrawer)}
-              sx={{ color: 'white' }}
-            >
+              sx={{ color: 'white' }}>
               <Close />
             </IconButton>
           </Box>
@@ -62,8 +60,7 @@ function HeaderMenuDrawer() {
       </Drawer>
       <IconButton
         onClick={() => setOpenDrawer(!openDrawer)}
-        sx={{ color: 'white' }}
-      >
+        sx={{ color: 'white' }}>
         <MenuIcon />
       </IconButton>
     </>
