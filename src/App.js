@@ -3,13 +3,14 @@ import PageHeader from './components/header'
 import PageFooter from './components/footer'
 
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-import { green, purple } from '@mui/material/colors'
+import { green, grey, blueGrey } from '@mui/material/colors'
 import Router from './router'
 
 const theme = createTheme({
   palette: {
-    primary: green,
-    secondary: purple
+    mode: 'dark',
+    primary: blueGrey,
+    secondary: green
   }
 })
 

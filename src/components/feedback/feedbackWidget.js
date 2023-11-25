@@ -8,8 +8,8 @@ import './feedback.scss'
 export default function FeedbackWidget() {
   return (
     <Box className={'feedbackForm'} sx={{
-      padding: 4, background: '#5ca649', position: 'sticky', top: 20,
-      minWidth: 300, borderRadius: 2, textAlign: 'center'
+      padding: 4, position: 'sticky', top: 20, minWidth: 300, borderRadius: 2, textAlign: 'center',
+      bgcolor: 'divider'
     }}>
       <Typography variant={'h3'} sx={{ marginBottom: 2 }}>Запись на консультацию</Typography>
       <Typography sx={{ marginBottom: 2 }}>Укажите свои данные, мы перезвоним и подберём для вас удобное время приёма.
@@ -20,7 +20,7 @@ export default function FeedbackWidget() {
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
         <LocalPhoneOutlinedIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-        <TextField  id='test' label='Телефон' fullWidth variant='standard' sx={{ mt: 2 }} />
+        <TextField id='test' label='Телефон' fullWidth variant='standard' sx={{ mt: 2 }} />
       </Box>
 
       <Box sx={{ textAlign: 'left', display: 'flex', mt: 4 }}>

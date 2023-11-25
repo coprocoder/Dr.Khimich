@@ -3,7 +3,8 @@ import {Button, Container, Typography} from "@mui/material";
 
 const HomeIntro = () => {
   const bgGradient = [
-    "linear-gradient(var(--darkWhiteTransparent), var(--darkWhiteTransparent))",
+    `linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.7))`,
+    // `linear-gradient(var(----black9), var(----black7)`,
   ].join(",");
 
   return (
@@ -33,42 +34,26 @@ const HomeIntroBody = () => {
       disableGutters
       maxWidth="sm"
       component="main"
-      sx={{
-        py: 6,
-        px: 2,
-        textAlign: "center",
-      }}
+      sx={{ py: 6, px: 2, textAlign: "center" }}
     >
       <Typography
         component="h1"
         variant="h2"
-        align="center"
         color="text.primary"
         gutterBottom
-        sx={{
-          fontWeight: "bold",
-        }}
+        sx={{ fontWeight: "bold" }}
       >
         Такой красивый логотип у вас
       </Typography>
       <Typography
         variant="h5"
-        align="center"
         color="text.secondary"
-        component="p"
       >
         Хотите свой покажу?
       </Typography>
-      <Button
-        href="#/products"
-        variant="contained"
-        sx={{
-          mt: 4,
-          px: 4,
-          textAlign: "center",
-          background: "var(--primary)"
-        }}
-      >
+      <Button href="#/products" variant="contained"
+              // color={'secondary'}
+              sx={{ mt: 4, px : 4 }}>
         Галерея
       </Button>
     </Container>

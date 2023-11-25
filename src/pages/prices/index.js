@@ -29,7 +29,7 @@ const PriceGallery = () => {
       </Stack>
       <Box className={'pricelist'}>
         <Box>
-          <List sx={{ flex: 1, width: '100%', bgcolor: 'background.paper', borderRadius: 2, padding: 4, minWidth: 500 }}>
+          <List sx={{ flex: 1, width: '100%', bgcolor: 'divider', borderRadius: 2, padding: 4, minWidth: 500 }}>
             <Typography variant={'h5'} sx={{ marginBottom: 2 }}>{selectedGroup?.groupName}</Typography>
             {selectedGroup?.itemList.map((item) => (
               <ListItem key={item.title} disableGutters
