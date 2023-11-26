@@ -11,6 +11,11 @@ const theme = createTheme({
     mode: 'dark',
     primary: blueGrey,
     secondary: green
+  },
+  typography: {
+    allVariants: {
+      color: 'white'
+    }
   }
 })
 

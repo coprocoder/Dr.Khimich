@@ -1,8 +1,9 @@
 import React from 'react'
+import { Box } from '@mui/material'
 
 const Shadow = ({ children }) => {
   return (
-    <div style={{ position: 'relative' }}>
+    <Box sx={{ position: 'relative' }}>
       {children}
       <div style={{
         background: `linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3))`,
@@ -12,7 +13,7 @@ const Shadow = ({ children }) => {
         top: 0,
         pointerEvents: 'none'
       }} />
-    </div>
+    </Box>
   )
 }
 

@@ -7,6 +7,7 @@ import DialogContent from '@mui/material/DialogContent'
 import DialogContentText from '@mui/material/DialogContentText'
 import DialogTitle from '@mui/material/DialogTitle'
 import { Box, Container, Typography } from '@mui/material'
+import FeedbackWidget from './feedbackWidget'
 
 export default function FeedbackDialog() {
   const [open, setOpen] = React.useState(false)
@@ -22,28 +23,10 @@ export default function FeedbackDialog() {
   return (
     <React.Fragment>
       <Button variant='outlined' onClick={handleClickOpen}>
-        Open form dialog
+        Записаться
       </Button>
       <Dialog open={open} onClose={handleClose}>
-        <Box sx={{ background: 'green' }}>
-          <Typography>
-            To subscribe to this website, please enter your email address here. We
-            will send updates occasionally.
-          </Typography>
-          <TextField
-            autoFocus
-            margin='dense'
-            id='name'
-            label='Email Address'
-            type='email'
-            fullWidth
-            variant='standard'
-          />
-
-          <DialogActions>
-            <Button onClick={handleClose}>Subscribe</Button>
-          </DialogActions>
-        </Box>
+        <FeedbackWidget />
       </Dialog>
     </React.Fragment>
   )

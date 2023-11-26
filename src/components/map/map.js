@@ -24,7 +24,11 @@ const YandexMap = () => {
             zoom: 17,
             controls: ['zoomControl']
           }}
-          width='100vw' height='50vh'
+          // TODO: size props
+          // width='100vw'
+          // height='50vh'
+          width={'100%'}
+          height={'100%'}
           modules={['control.ZoomControl']}
         >
           <Placemark

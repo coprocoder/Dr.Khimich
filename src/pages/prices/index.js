@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {
-  List, ListItem, ListItemText, Typography, Container, Chip, Stack, Box
+  List, ListItem, ListItemText, Typography, Container, Chip, Stack, Box, Link
 } from '@mui/material'
 import { priceConfig } from './priceConfig'
 import FeedbackWidget from '../../components/feedback/feedbackWidget'
@@ -19,7 +19,7 @@ const PriceGallery = () => {
 
   return (
     <Container>
-      <Typography variant='h3' gutterBottom>Цены</Typography>
+      <Typography variant='h3' gutterBottom mt={3}>Цены</Typography>
       <Stack direction='row' spacing={1} pb={2}>
         {priceConfig.map((group, i) => (
           <Chip key={`price${i}`} label={group.groupName}
@@ -40,12 +40,14 @@ const PriceGallery = () => {
             )}
           </List>
           <div>
-            <p>С полным прейскурантом на услуги стоматологии вы можете ознакомиться <a
-              href='https://drive.google.com/file/d/14LhuXEVgGx7UCoNu9Krt65MzSy7kxB66/view?usp=share_link'
-              target='_blank' rel='noreferrer'>по ссылке.</a></p>
-            <p>Цены на сайте не являются публичной офертой.</p>
-            <p>Составление точного плана лечения с указанием стоимости услуг требует очной консультаций с лечащим
-              врачом и проведения диагностики.</p>
+            <Typography color={'text.secondary'}>С полным прейскурантом на услуги стоматологии вы можете ознакомиться
+              <Link href='https://drive.google.com/file/d/14LhuXEVgGx7UCoNu9Krt65MzSy7kxB66/view?usp=share_link'
+                 target='_blank' rel='noreferrer'> по ссылке.</Link>
+            </Typography>
+            <Typography color={'text.secondary'}>Цены на сайте не являются публичной офертой.</Typography>
+            <Typography color={'text.secondary'}>Составление точного плана лечения с указанием стоимости услуг требует
+              очной консультаций с лечащим
+              врачом и проведения диагностики.</Typography>
           </div>
         </Box>
         <Box>

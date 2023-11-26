@@ -19,6 +19,9 @@ const ProductsGallery = loadable(() => import('./pages/products'), {
 const PriceGallery = loadable(() => import('./pages/prices'), {
   fallback: <Waiter />
 })
+const Contacts = loadable(() => import('./pages/contacts'), {
+  fallback: <Waiter />
+})
 
 const NotFound = () => <div>Sorry, page not found. Go back.</div>
 
@@ -29,6 +32,7 @@ const Router = () => {
         <Route exact path='/' element={<HomePage />} />
         <Route path='/products' element={<ProductsGallery />} />
         <Route path='/prices' element={<PriceGallery />} />
+        <Route path='/contacts' element={<Contacts />} />
         <Route element={<NotFound />} />
       </Routes>
     </HashRouter>

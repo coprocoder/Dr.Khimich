@@ -1,55 +1,59 @@
 :root {
-    --primary: hsl(10, 33%, 30%);
-    --primarySecond: hsl(10, 33%, 50%);
+  --primary: hsl(10, 33%, 30%);
+  --primarySecond: hsl(10, 33%, 50%);
 
-    --darkWhiteTransparent: rgba(235, 235, 235, 0.9);
-    --gray: rgb(160, 160, 160);
+  --darkWhiteTransparent: rgba(235, 235, 235, 0.9);
+  --gray: rgb(160, 160, 160);
 
-    --black7: rgba(0,0,0,.7);
-    --black9: rgba(0,0,0,.9);
+  --black7: rgba(0, 0, 0, .7);
+  --black9: rgba(0, 0, 0, .9);
 }
 
 html,
 body {
-    background-color: var(--black9);
-    margin: 0;
-    overscroll-behavior: none;
+  background-color: var(--black9);
+  margin: 0;
+  overscroll-behavior: none;
 }
 
 body {
-    overflow-x: hidden;
-    overflow-y: overlay;
-    ::-webkit-scrollbar {
-        display: none;
-    }
+  overflow-x: hidden;
+  overflow-y: overlay;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
-    background: color-mix(in srgb, var(--gray), transparent 90%);
-    border-radius: 4px;
+  background: color-mix(in srgb, var(--gray), transparent 90%);
+  border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--gray);
+  background: var(--gray);
 }
 
 *,
 :after,
 :before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a:-webkit-any-link {
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    // color: var(--primary);
-    // &:hover {
-    //     color: var(--primarySecond);
-    // }
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  //color: var(--primary);
+  //&:hover {
+  //  color: var(--primarySecond);
+  //}
 }
