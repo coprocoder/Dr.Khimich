@@ -1,0 +1,2 @@
+.pricelist{grid-gap:30px;display:grid;gap:30px;grid-template-columns:calc(100% - 530px) 500px}@media only screen and (max-width:1200px){.pricelist{grid-template-columns:100%}}
+/*# sourceMappingURL=410.59f4700c.chunk.css.map*/
