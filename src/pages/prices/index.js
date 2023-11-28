@@ -50,8 +50,8 @@ const PriceGallery = () => {
               врачом и проведения диагностики.</Typography>
           </div>
         </Box>
-        <Box>
-          <FeedbackWidget sx={{ minWidth: 300 }} />
+        <Box sx={{ bgcolor: 'primary.dark', borderRadius: 2 }}>
+          <FeedbackWidget />
         </Box>
       </Box>
     </Container>

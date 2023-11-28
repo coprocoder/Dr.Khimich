@@ -1,16 +1,16 @@
 import React, { useRef } from 'react'
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps'
 import { Box } from '@mui/material'
-import Shadow from '../Kit/shadow'
+import ShadowBlur from '../Kit/shadowBlur'
 
 const API_KEY = '50918224-0c7c-4126-a2eb-9d6a58a1af7b'
 const center = [56.015777, 92.847946]
 
-const YandexMap = () => {
+const YandexMap = ({sx}) => {
   const mapRef = useRef()
 
   return (
-    <Shadow>
+    <ShadowBlur sx={sx}>
       <YMaps
         query={{
           load: 'package.full',
@@ -46,7 +46,7 @@ const YandexMap = () => {
           />
         </Map>
       </YMaps>
-    </Shadow>
+    </ShadowBlur>
   )
 }
 
