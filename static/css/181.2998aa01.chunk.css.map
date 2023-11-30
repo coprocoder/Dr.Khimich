@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/181.2998aa01.chunk.css","mappings":"AAME,gBACE","sources":["pages/rates/rates.scss"],"sourcesContent":[".fw {\n  color: red;\n  * {\n    color: red;\n  }\n\n  & > * {\n    color: red;\n  }\n}"],"names":[],"sourceRoot":""}
