@@ -39,7 +39,7 @@ const PriceGallery = () => {
               </ListItem>)
             )}
           </List>
-          <div>
+          <Box sx={{mt: 2}}>
             <Typography color={'text.secondary'}>С полным прейскурантом на услуги стоматологии вы можете ознакомиться
               <Link href='https://drive.google.com/file/d/14LhuXEVgGx7UCoNu9Krt65MzSy7kxB66/view?usp=share_link'
                  target='_blank' rel='noreferrer'> по ссылке.</Link>
@@ -48,7 +48,7 @@ const PriceGallery = () => {
             <Typography color={'text.secondary'}>Составление точного плана лечения с указанием стоимости услуг требует
               очной консультаций с лечащим
               врачом и проведения диагностики.</Typography>
-          </div>
+          </Box>
         </Box>
         <Box sx={{ bgcolor: 'primary.dark', borderRadius: 2 }}>
           <FeedbackWidget />

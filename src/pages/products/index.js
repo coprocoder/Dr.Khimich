@@ -77,7 +77,6 @@ export const ProductsGrid = ({count}) => {
               <CardMedia
                 sx={{height: 140}}
                 image={process.env.PUBLIC_URL + "/static/images/woodman.jpg"}
-                title="green iguana"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">

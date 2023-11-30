@@ -19,6 +19,9 @@ const ProductsGallery = loadable(() => import('./pages/products'), {
 const PriceGallery = loadable(() => import('./pages/prices'), {
   fallback: <Waiter />
 })
+const Rates = loadable(() => import('./pages/rates'), {
+  fallback: <Waiter />
+})
 const Contacts = loadable(() => import('./pages/contacts'), {
   fallback: <Waiter />
 })
@@ -32,6 +35,7 @@ const Router = () => {
         <Route exact path='/' element={<HomePage />} />
         <Route path='/products' element={<ProductsGallery />} />
         <Route path='/prices' element={<PriceGallery />} />
+        <Route path='/rates' element={<Rates />} />
         <Route path='/contacts' element={<Contacts />} />
         <Route element={<NotFound />} />
       </Routes>
