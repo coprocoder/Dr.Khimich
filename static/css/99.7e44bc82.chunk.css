@@ -1,0 +1,2 @@
+.MuiImageList-root{grid-template-columns:repeat(8,1fr)!important}@media only screen and (max-width:1200px){.MuiImageList-root{grid-template-columns:repeat(7,1fr)!important}}@media only screen and (max-width:960px){.MuiImageList-root{grid-template-columns:repeat(6,1fr)!important;max-height:50vh}}@media only screen and (max-width:760px){.MuiImageList-root{grid-template-columns:repeat(5,1fr)!important}}@media only screen and (max-width:600px){.MuiImageList-root{grid-template-columns:repeat(4,1fr)!important}}
+/*# sourceMappingURL=99.7e44bc82.chunk.css.map*/
