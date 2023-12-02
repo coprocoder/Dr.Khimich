@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/WoodWorkshop/static/css/main.2bcaa139.css",
-    "main.js": "/WoodWorkshop/static/js/main.49d8ea52.js",
+    "main.js": "/WoodWorkshop/static/js/main.b4f0f766.js",
     "static/css/237.0ef59245.chunk.css": "/WoodWorkshop/static/css/237.0ef59245.chunk.css",
-    "static/js/237.16db7d09.chunk.js": "/WoodWorkshop/static/js/237.16db7d09.chunk.js",
+    "static/js/237.c390152b.chunk.js": "/WoodWorkshop/static/js/237.c390152b.chunk.js",
     "static/css/621.00ed08a6.chunk.css": "/WoodWorkshop/static/css/621.00ed08a6.chunk.css",
     "static/js/621.bab3697f.chunk.js": "/WoodWorkshop/static/js/621.bab3697f.chunk.js",
     "static/css/99.7e44bc82.chunk.css": "/WoodWorkshop/static/css/99.7e44bc82.chunk.css",
@@ -21,9 +21,9 @@
     "index.html": "/WoodWorkshop/index.html",
     "static/media/icon-vk.svg": "/WoodWorkshop/static/media/icon-vk.506de7ed26dd081a426ce00488a79dc2.svg",
     "main.2bcaa139.css.map": "/WoodWorkshop/static/css/main.2bcaa139.css.map",
-    "main.49d8ea52.js.map": "/WoodWorkshop/static/js/main.49d8ea52.js.map",
+    "main.b4f0f766.js.map": "/WoodWorkshop/static/js/main.b4f0f766.js.map",
     "237.0ef59245.chunk.css.map": "/WoodWorkshop/static/css/237.0ef59245.chunk.css.map",
-    "237.16db7d09.chunk.js.map": "/WoodWorkshop/static/js/237.16db7d09.chunk.js.map",
+    "237.c390152b.chunk.js.map": "/WoodWorkshop/static/js/237.c390152b.chunk.js.map",
     "621.00ed08a6.chunk.css.map": "/WoodWorkshop/static/css/621.00ed08a6.chunk.css.map",
     "621.bab3697f.chunk.js.map": "/WoodWorkshop/static/js/621.bab3697f.chunk.js.map",
     "99.7e44bc82.chunk.css.map": "/WoodWorkshop/static/css/99.7e44bc82.chunk.css.map",
@@ -37,6 +37,6 @@
   },
   "entrypoints": [
     "static/css/main.2bcaa139.css",
-    "static/js/main.49d8ea52.js"
+    "static/js/main.b4f0f766.js"
   ]
 }
