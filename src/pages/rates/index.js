@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Box, Container, Typography } from '@mui/material'
+import { Container, Typography } from '@mui/material'
 import './rates.scss'
 
 const Rates = () => {

@@ -4,11 +4,12 @@ import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 
-export default function FeedbackWidget() {
+function FeedbackWidget() {
   const { palette } = useTheme()
-  return (<Box className={'feedbackForm'} sx={{
+  return (
+    <Box className={'feedbackForm'} sx={{
       position: 'sticky', top: 20, minWidth: 300, textAlign: 'center',
-      padding: 4,
+      padding: 4
       // borderRadius: 2,
       // bgcolor: 'divider'
     }}>
@@ -32,5 +33,8 @@ export default function FeedbackWidget() {
 
       <Button variant='contained' startIcon={<PhoneInTalkIcon />}
               sx={{ mt: 4, borderRadius: 10, paddingX: 4, paddingY: 2 }}>Записаться</Button>
-    </Box>)
+    </Box>
+  )
 }
+
+export default FeedbackWidget

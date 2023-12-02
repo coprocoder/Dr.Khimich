@@ -1,12 +1,12 @@
 import React from 'react'
-import { Box, Container } from '@mui/material'
+import { Container } from '@mui/material'
+import FeedbackWidget from '../../../components/widget/feedbackWidget'
+import YandexMap from '../../../components/widget/map'
 import './contacts.scss'
-import YandexMap from '../../../components/map/map'
-import FeedbackWidget from '../../../components/feedback/feedbackWidget'
 
 const Contacts = () => {
   return (
-    <Container className={'contacts'} sx={{paddingY: 12}} >
+    <Container className={'contacts'} sx={{ paddingY: 12 }}>
       <FeedbackWidget />
       <YandexMap />
     </Container>

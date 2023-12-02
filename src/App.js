@@ -1,6 +1,6 @@
 import React from 'react'
-import PageHeader from './components/header'
-import PageFooter from './components/footer'
+import PageHeader from './components/pageBase/header'
+import PageFooter from './components/pageBase/footer'
 
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { grey, blueGrey } from '@mui/material/colors'

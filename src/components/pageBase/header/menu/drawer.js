@@ -7,7 +7,7 @@ import {
 import Close from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Close'
 import { menuConfig } from './config'
-import FeedbackDialog from '../../feedback/feedbackDialog'
+import FeedbackDialog from '../feedbackDialog'
 import '../header.scss'
 
 function HeaderMenuDrawer() {

@@ -1,8 +1,8 @@
 import React from 'react'
 import { AppBar, Toolbar, Link, Slide, useMediaQuery, useScrollTrigger, useTheme } from '@mui/material'
 
-import { ReactComponent as LogoMin } from '../../assets/images/logo_min.svg'
-import { ReactComponent as LogoMax } from '../../assets/images/logo_max.svg'
+import { ReactComponent as LogoMin } from '../../../assets/images/logo_min.svg'
+import { ReactComponent as LogoMax } from '../../../assets/images/logo_max.svg'
 import './header.scss'
 import HeaderMenuDrawer from './menu/drawer'
 import HeaderMenuFull from './menu/lineMenu'

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps'
 import { Box } from '@mui/material'
-import ShadowBlur from '../Kit/shadowBlur'
+import ShadowBlur from '../kit/shadowBlur'
 
 const API_KEY = '50918224-0c7c-4126-a2eb-9d6a58a1af7b'
 const center = [56.015777, 92.847946]

@@ -1,6 +1,5 @@
 import React from 'react'
-import YandexMap from '../../components/map/map'
-import HomeIntro from '../../pages/home/intro'
+import YandexMap from '../../components/widget/map'
 import { Container, Box, Typography, List, ListItem, ListItemText } from '@mui/material'
 import './contacts.scss'
 

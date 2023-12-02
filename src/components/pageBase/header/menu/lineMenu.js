@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from '@mui/material'
 import { menuConfig } from './config'
-import FeedbackDialog from '../../feedback/feedbackDialog'
+import FeedbackDialog from '../feedbackDialog'
 import '../header.scss'
 
 const HeaderMenuFull = () => {
