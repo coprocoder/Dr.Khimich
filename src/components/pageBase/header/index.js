@@ -20,13 +20,13 @@ const HideOnScroll = (props) => {
   )
 }
 
-const Header = (props) => {
+const Header = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
-    <HideOnScroll {...props}>
-      <AppBar position='sticky' color='default' elevation={0}
+    <HideOnScroll>
+      <AppBar position='sticky' elevation={0}
               sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}>
         <Toolbar sx={{ flexWrap: 'wrap' }} className='header'>
           <Link variant='body2' color='text.primary' href={` ${process.env.PUBLIC_URL}/`}

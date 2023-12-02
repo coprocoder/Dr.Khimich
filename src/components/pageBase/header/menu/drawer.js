@@ -18,8 +18,8 @@ function HeaderMenuDrawer() {
         anchor={'right'}
         open={!!isVisible}
         onClose={() => setVisible(false)}>
-        <Box sx={{ p: 1 }}>
-          <Box sx={{ mb: 1 }}>
+        <Box sx={{ p: 1, width: '100vw' }}>
+          <Box sx={{ mb: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <IconButton
               onClick={() => setVisible(!isVisible)}
               sx={{ color: 'white' }}>

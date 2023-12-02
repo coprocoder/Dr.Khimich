@@ -27,6 +27,30 @@ const priceTemplate = [
       { title: 'Раз так так', price: 6000 },
       { title: 'Два так так', price: 6000 }
     ]
+  },
+  {
+    groupName: 'Группа 3',
+    itemList: [
+      { title: 'Первый', price: 1000 },
+      { title: 'Второй', price: 2000 },
+      { title: 'Третий', price: 3000 },
+    ]
+  },
+  {
+    groupName: 'Группа 4',
+    itemList: [
+      { title: 'Первый', price: 1000 },
+      { title: 'Второй', price: 2000 },
+      { title: 'Третий', price: 3000 },
+    ]
+  },
+  {
+    groupName: 'Группа 5',
+    itemList: [
+      { title: 'Первый', price: 1000 },
+      { title: 'Второй', price: 2000 },
+      { title: 'Третий', price: 3000 },
+    ]
   }
 ]
 

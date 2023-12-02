@@ -4,17 +4,16 @@ import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 
-function FeedbackWidget() {
+function FeedbackWidget({sx}) {
   const { palette } = useTheme()
   return (
     <Box className={'feedbackForm'} sx={{
-      position: 'sticky', top: 20, minWidth: 300, textAlign: 'center', padding: 4
+      position: 'sticky', top: 20, minWidth: 300, textAlign: 'center', padding: 4, ...sx
     }}>
       <Typography variant={'h3'} sx={{ marginBottom: 2 }}>Запись на консультацию</Typography>
       <Typography sx={{ marginBottom: 2 }}>Укажите свои данные, мы перезвоним и подберём для вас удобное время приёма.
         Или позвоните нам сами —
-        {/*<div style={{fontWeight: 'bold'}}>88005553535</div>*/}
-        <Typography variant={'h5'} sx={{ fontWeight: 'bold' }}>88005553535</Typography>
+        <Typography variant={'h5'} sx={{ fontWeight: 'bold' }}>+7 (908) 216-66-11</Typography>
       </Typography>
       <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
         <PermIdentityOutlinedIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
@@ -26,8 +25,8 @@ function FeedbackWidget() {
       </Box>
 
       <Box sx={{ textAlign: 'left', display: 'flex', mt: 4 }}>
-        <input type='checkbox' id='CHECK_ZAPIS' style={{ width: '4rem', marginRight: '1em' }} />
-        <label htmlFor={'CHECK_ZAPIS'} style={{ color: palette.secondary.main }}>Даю согласие на обработку персональных
+        <input type='checkbox' id='checkbox_policy' style={{ width: '4em', marginRight: '1em' }} />
+        <label htmlFor={'checkbox_policy'} style={{ color: palette.text.primary }}>Даю согласие на обработку персональных
           данных, соглашаюсь с политикой конфиденциальности</label>
       </Box>
 
