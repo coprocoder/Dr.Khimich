@@ -6,7 +6,7 @@ import './contacts.scss'
 
 const Contacts = () => {
   return (
-    <Container className={'contacts'} sx={{ bgcolor: 'divider', borderRadius: 4 }}>
+    <Container className={'contacts'} sx={{ marginY: 8, bgcolor: 'divider', borderRadius: 4 }}>
       <FeedbackWidget  />
       <YandexMap />
     </Container>
