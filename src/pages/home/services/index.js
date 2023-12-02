@@ -14,7 +14,7 @@ const Services = () => {
         <Grid container spacing={2}>
           {serviceConfig.map((x, i) => (
             <Grid key={`service${i}`} item md={x.gridMd} onClick={openService}>
-              <ServiceItem text={x.title} bg={x.image} />
+              <ServiceCard text={x.title} bg={x.image} />
             </Grid>
           ))}
         </Grid>
@@ -23,7 +23,7 @@ const Services = () => {
   )
 }
 
-const ServiceItem = ({ text, bg }) => {
+const ServiceCard = ({ text, bg }) => {
   const bgOpacity = 0.5
   const gradient = `linear-gradient(rgba(0,0,0,${bgOpacity}), rgba(0,0,0,${bgOpacity}))`
   return (

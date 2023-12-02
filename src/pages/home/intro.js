@@ -51,7 +51,7 @@ const HomeIntroBody = () => {
       >
         Хотите свой покажу?
       </Typography>
-      <Button href="#/products" variant="contained"
+      <Button href="#/photos" variant="contained"
               // color={'secondary'}
               sx={{ mt: 4, px : 4 }}>
         Галерея

@@ -1,0 +1,26 @@
+@mixin imgGrid($colCount) {
+  .MuiImageList-root {
+    grid-template-columns: repeat($colCount, 1fr) !important;
+  }
+}
+
+@include imgGrid(8);
+
+@media only screen and (max-width: 1200px) {
+  @include imgGrid(7);
+}
+
+@media only screen and (max-width: 960px) {
+  @include imgGrid(6);
+  .MuiImageList-root {
+    max-height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  @include imgGrid(5);
+}
+
+@media only screen and (max-width: 600px) {
+  @include imgGrid(4);
+}
