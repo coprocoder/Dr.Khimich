@@ -8,12 +8,12 @@ const Services = () => {
   };
 
   return (
-    <Container sx={{ paddingY: 12 }}>
+    <Container sx={{ paddingY: 8 }}>
       <Typography variant='h3' gutterBottom mt={3}>Предоставляем услуги</Typography>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           {serviceConfig.map((x, i) => (
-            <Grid key={`service${i}`} item md={x.gridMd} onClick={openService}>
+            <Grid item key={`service${i}`} onClick={openService} xs={12} sm={6} md={x.gridMd}>
               <ServiceCard text={x.title} bg={x.image} />
             </Grid>
           ))}

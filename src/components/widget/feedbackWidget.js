@@ -12,7 +12,10 @@ function FeedbackWidget() {
     }}>
       <Typography variant={'h3'} sx={{ marginBottom: 2 }}>Запись на консультацию</Typography>
       <Typography sx={{ marginBottom: 2 }}>Укажите свои данные, мы перезвоним и подберём для вас удобное время приёма.
-        Или позвоните нам сами — <div style={{fontWeight: 'bold'}}>88005553535</div></Typography>
+        Или позвоните нам сами —
+        {/*<div style={{fontWeight: 'bold'}}>88005553535</div>*/}
+        <Typography variant={'h5'} sx={{ fontWeight: 'bold' }}>88005553535</Typography>
+      </Typography>
       <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
         <PermIdentityOutlinedIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
         <TextField autoFocus id='test' label='Имя' fullWidth variant='standard' sx={{ mt: 2 }} color={'secondary'} />

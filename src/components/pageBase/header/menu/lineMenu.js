@@ -14,7 +14,7 @@ const HeaderMenuFull = () => {
 
 const MenuNav = () => {
   return (<nav>
-    {Object.values(menuConfig).map((x, i) => (
+    {menuConfig.map((x, i) => (
       <Link
         key={i}
         variant='button'
