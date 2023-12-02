@@ -1,8 +1,8 @@
-// TODO: use mixin
 .contacts {
   display: grid;
-  grid-template-columns: calc(100% - 530px) 500px;
+  grid-template-columns: calc(100% - 500px) 500px;
   gap: 30px;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1200px) {

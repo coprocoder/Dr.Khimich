@@ -1,68 +1,79 @@
-import React from "react";
-import { Grid, Typography, Link, Container } from "@mui/material";
-import Copyright from "../copyright";
+import React from 'react'
+import { Grid, Typography, Link, Container, Stack, Box } from '@mui/material'
+import { sitemapConfig } from './sitemap.config'
 
-const footers = [
-  {
-    title: "Company",
-    description: ["Team", "History", "Contact us", "Locations"],
-  },
-  {
-    title: "Features",
-    description: [
-      "Cool stuff",
-      "Random feature",
-      "Team feature",
-      "Developer stuff",
-      "Another one",
-    ],
-  },
-  {
-    title: "Resources",
-    description: [
-      "Resource",
-      "Resource name",
-      "Another resource",
-      "Final resource",
-    ],
-  },
-  {
-    title: "Legal",
-    description: ["Privacy policy", "Terms of use"],
-  },
-];
+import { ReactComponent as IconVk } from '../../../assets/images/socialIcon/icon-vk.svg'
+import { ReactComponent as IconViber } from '../../../assets/images/socialIcon/icon-viber.svg'
+import { ReactComponent as IconWhatsApp } from '../../../assets/images/socialIcon/icon-whatsapp.svg'
 
 const PageFooter = () => {
   return (
     <Container
-      component="footer"
+      component='footer'
       sx={{
         borderTop: (theme) => `1px solid ${theme.palette.divider}`,
         mt: 8,
-        py: [3, 6],
+        py: [3, 6]
       }}
     >
-      <Grid container spacing={4} justifyContent="space-evenly">
-        {footers.map((footer) => (
-          <Grid item xs={6} sm={3} key={footer.title}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
-              {footer.title}
+      <Grid container spacing={4} justifyContent='space-evenly'>
+        {sitemapConfig.map((footer) => (
+          <Grid item xs={6} sm={3} key={footer.groupName}>
+            <Typography variant='h6' color='text.primary' gutterBottom>
+              {footer.groupName}
             </Typography>
-            <ul>
-              {footer.description.map((item) => (
-                <li key={item}>
-                  <Link href="#" variant="subtitle1" color="text.secondary">
-                    {item}
-                  </Link>
-                </li>
+            <Stack>
+              {footer.itemList.map((item) => (
+                <Link key={item.name} href={item.link} variant='subtitle1' color='text.secondary'>
+                  {item.name}
+                </Link>
               ))}
-            </ul>
+            </Stack>
           </Grid>
         ))}
+        <FooterContacts />
       </Grid>
-      <Copyright sx={{mt: 5}} />
-    </Container>
-  );
-};
 
-export default PageFooter;
+      <Typography
+        variant='body2'
+        color='text.secondary'
+        align='center'
+        sx={{ mt: 5 }}>
+        {`2009 - ${new Date().getFullYear()} © `}
+        <Link color='inherit' href='https://t.me/coprocoder'>
+          Все права защищены
+        </Link>
+      </Typography>
+    </Container>
+  )
+}
+
+const FooterContacts = () => {
+  return (
+    <Grid item xs={6} sm={3}>
+      <Typography variant='h6' color='text.primary' gutterBottom>{'Телефоны'}</Typography>
+      <Link href={'tel:+7 (908) 216-66-11'} variant='subtitle1' color='text.secondary'>
+        {'+7 (908) 216-66-11'}
+      </Link>
+      <Typography variant='h6' color='text.primary' gutterBottom sx={{ mt: 2 }}>{'Почта'}</Typography>
+      <Link href={'mailto:khimich@mail.ru'} variant='subtitle1' color='text.secondary'>
+        {'khimich@mail.ru'}
+      </Link>
+
+      {/* Social links*/}
+      <Box sx={{ mt: 2, display: 'flex', gap: 1 }}>
+        <Link href={'https://vk.com/dr.khimich'} variant='subtitle1' color='text.secondary'>
+          <IconVk width={32} />
+        </Link>
+        <Link href={'https://api.whatsapp.com/send/?phone=79082166611'} variant='subtitle1' color='text.secondary'>
+          <IconWhatsApp width={32} />
+        </Link>
+        <Link href={'viber://contact?number=%2B79082166611'} variant='subtitle1' color='text.secondary'>
+          <IconViber width={32} />
+        </Link>
+      </Box>
+    </Grid>
+  )
+}
+
+export default PageFooter

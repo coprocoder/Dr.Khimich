@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Container, Grid, Typography } from '@mui/material'
-import { doctorsConfig } from './doctorsConfig'
+import { doctorsConfig } from './doctors.config'
 
 const Doctors = () => {
   const openService = (url) => {
@@ -9,14 +9,14 @@ const Doctors = () => {
 
   return (
     <Container sx={{ paddingY: 8 }}>
-      <Typography variant='h3' gutterBottom mt={3}>Врачи</Typography>
+      <Typography variant='h3' gutterBottom mt={3}>Наши специалисты</Typography>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           {doctorsConfig.map((x, i) => (
             <Grid key={`service${i}`} item md={6} onClick={openService}>
               <DoctorCard text={x.title} bg={x.image} />
             </Grid>
-          ))}T
+          ))}
         </Grid>
       </Box>
     </Container>
@@ -32,7 +32,7 @@ const DoctorCard = ({ text, bg }) => {
       backgroundImage: `${gradient},url(${bg})`,
       backgroundSize: 'cover',
       padding: 2,
-      borderRadius: 2,
+      borderRadius: 4,
       display: 'flex',
       alignItems: 'flex-end'
     }}>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from '@mui/material'
-import { menuConfig } from './config'
+import { menuConfig } from './menu.config'
 import FeedbackDialog from '../feedbackDialog'
 import '../header.scss'
 

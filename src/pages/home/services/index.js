@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Container, Grid, Typography } from '@mui/material'
-import { serviceConfig } from './serviceConfig'
+import { serviceConfig } from './service.config'
 
 const Services = () => {
   const openService = (url) => {
@@ -32,7 +32,7 @@ const ServiceCard = ({ text, bg }) => {
       backgroundImage: `${gradient},url(${bg})`,
       backgroundSize: 'cover',
       padding: 2,
-      borderRadius: 2,
+      borderRadius: 4,
       display: 'flex',
       alignItems: 'flex-end'
     }}>

@@ -6,7 +6,7 @@ import {
 } from '@mui/material'
 import Close from '@mui/icons-material/Close'
 import { Menu } from '@mui/icons-material'
-import { menuConfig } from './config'
+import { menuConfig } from './menu.config'
 import FeedbackDialog from '../feedbackDialog'
 import '../header.scss'
 

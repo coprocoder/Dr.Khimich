@@ -8,7 +8,7 @@ const Contacts = () => {
     <Container>
       <Typography variant='h3' gutterBottom mt={3}>Контакты</Typography>
       <Box className={'contacts'}>
-        <Box sx={{ bgcolor: 'divider', borderRadius: 2, padding: 4 }}>
+        <Box sx={{ bgcolor: 'divider', borderRadius: 4, padding: 4 }}>
           {/*<Typography variant={'h5'} sx={{ marginBottom: 1 }}>{'Контакты'}</Typography>*/}
           <List sx={{ flex: 1 }}>
             <ListItem disableGutters sx={{ pt: 1 }}>
@@ -21,8 +21,8 @@ const Contacts = () => {
             </ListItem>
             <Box disableGutters sx={{ pt: 1 }}>
               <Typography sx={{ fontWeight: 'bold', mr: 1, mb: 0.5 }}>Режим работы:</Typography>
-              <Typography>пн.-пт. с 9:00 до 22:00</Typography>
-              <Typography>сб. с 10:00 до 16:00</Typography>
+              <Typography>пн.-пт. с 9:00 до 21:00</Typography>
+              <Typography>сб. с 10:00 до 20:00</Typography>
               <Typography>Вск. выходной</Typography>
             </Box>
           </List>
