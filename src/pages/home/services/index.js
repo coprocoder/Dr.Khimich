@@ -31,12 +31,13 @@ const ServiceCard = ({ text, bg }) => {
       height: '20em',
       backgroundImage: `${gradient},url(${bg})`,
       backgroundSize: 'cover',
+      backgroundPosition: 'center',
       padding: 2,
       borderRadius: 4,
       display: 'flex',
       alignItems: 'flex-end'
     }}>
-      <Typography variant='h4'>{text}</Typography>
+      <Typography variant='h5'>{text}</Typography>
     </Box>
   )
 }

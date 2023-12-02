@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {
   List, ListItem, ListItemText, Typography, Container, Chip, Stack, Box, Link
 } from '@mui/material'
-import { priceConfig } from './priceConfig'
+import { priceOnfig } from './price.сonfig'
 import FeedbackWidget from '../../components/widget/feedbackWidget'
 import './prices.scss'
 
@@ -10,10 +10,10 @@ const PriceGallery = () => {
   const [selectedGroup, setGroup] = useState()
 
   useEffect(() => {
-    if (priceConfig.length) {
-      setGroup(priceConfig[0])
+    if (priceOnfig.length) {
+      setGroup(priceOnfig[0])
     }
-  }, [priceConfig.length])
+  }, [priceOnfig.length])
 
   const handleClick = (group) => setGroup(group)
 
@@ -21,7 +21,7 @@ const PriceGallery = () => {
     <Container>
       <Typography variant='h3' gutterBottom mt={3}>Цены</Typography>
       <Stack direction='row' useFlexGap flexWrap='wrap' spacing={1} pb={2}>
-        {priceConfig.map((group, i) => (
+        {priceOnfig.map((group, i) => (
           <Chip key={`price${i}`} label={group.groupName}
                 variant={group.groupName === selectedGroup?.groupName ? 'filled' : 'outlined'}
                 onClick={() => handleClick(group)} />
@@ -37,22 +37,26 @@ const PriceGallery = () => {
                 borderBottom: (theme) => `1px solid ${theme.palette.divider}`
               }}>
                 <ListItemText primary={item.title} />
-                <Typography sx={{ fontWeight: 'bold' }}>{item.price}</Typography>
+                <Typography sx={{ fontWeight: 'bold', whiteSpace: 'nowrap' }}>{item.value} ₽</Typography>
               </ListItem>
             ))}
           </List>
           <Box sx={{ mt: 2 }}>
+            <Typography color={'text.secondary'}>Цены на сайте не являются публичной офертой.</Typography>
             <Typography color={'text.secondary'}>С полным прейскурантом на услуги стоматологии вы можете ознакомиться
               <Link href='https://stomcomplex24.ru/price'
-                    target='_blank' rel='noreferrer'> по ссылке.</Link>
+                    target='_blank' rel='noreferrer'> по ссылке</Link>.
             </Typography>
-            <Typography color={'text.secondary'}>Цены на сайте не являются публичной офертой.</Typography>
             <Typography color={'text.secondary'}>Составление точного плана лечения с указанием стоимости услуг требует
               очной консультаций с лечащим
               врачом и проведения диагностики.</Typography>
+            <Typography color={'text.secondary'}>На услуги предоставляются
+              <Link href='/#/guarantees'
+                    target='_blank' rel='noreferrer'> гарантии</Link>.
+            </Typography>
           </Box>
         </Box>
-        <Box >
+        <Box>
           <FeedbackWidget sx={{ bgcolor: 'primary.dark', borderRadius: 4 }} />
         </Box>
       </Box>

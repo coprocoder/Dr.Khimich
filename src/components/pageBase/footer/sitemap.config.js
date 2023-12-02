@@ -5,6 +5,7 @@ export const sitemapConfig = [
       { name: 'О нас', link: '/' },
       { name: 'Врачи', link: '/#/prices' },
       { name: 'Отзывы', link: '/#/rates' },
+      { name: 'Галерея', link: '/#/photos' },
       { name: 'Контакты', link: '/#/contacts' }
     ]
   },
@@ -12,7 +13,7 @@ export const sitemapConfig = [
     'groupName': "Услуги",
     'itemList': [
       { name: 'Цены', link: '/#/prices' },
-      { name: 'Гарантии', link: '/' }, // TODO page
+      { name: 'Гарантии', link: '/#/guarantees' },
       // TODO: страницы с каждой услуги: описание, цены, врачи, фото
     ],
   },

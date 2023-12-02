@@ -1,7 +1,6 @@
 import React from 'react'
 import HomeIntro from './intro'
 import Contacts from './contacts'
-import YandexMap from '../../components/widget/map'
 import Services from './services'
 import Doctors from './doctors'
 
@@ -12,7 +11,6 @@ const HomePage = () => {
       <Services />
       <Doctors />
       <Contacts />
-      {/*<YandexMap />*/}
     </>
   )
 }

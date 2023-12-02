@@ -1,27 +1,27 @@
 const serviceTemplate = [
   {
-    title: 'Услуга 1',
-    image: process.env.PUBLIC_URL + '/static/images/woodman.jpg',
+    title: 'Протезирование (ортопедия)',
+    image: require('assets/images/services/prothesis.webp'),
     gridMd: 6,
   }, {
-    title: 'Услуга 2',
-    image: process.env.PUBLIC_URL + '/static/images/woodman.jpg',
+    title: 'Терапевтическая стоматология',
+    image: require('assets/images/services/therapy.webp'),
     gridMd: 3,
   }, {
-    title: 'Услуга 3',
-    image: process.env.PUBLIC_URL + '/static/images/woodman.jpg',
+    title: 'Хирургия',
+    image: require('assets/images/services/surgery.webp'),
     gridMd: 3,
   }, {
-    title: 'Услуга 4',
-    image: process.env.PUBLIC_URL + '/static/images/woodman.jpg',
+    title: 'Ортодонтия (исправление прикуса)',
+    image: require('assets/images/services/prikus.webp'),
     gridMd: 3,
   }, {
-    title: 'Услуга 4',
-    image: process.env.PUBLIC_URL + '/static/images/woodman.jpg',
+    title: 'Детская стоматология',
+    image: require('assets/images/services/childs.webp'),
     gridMd: 6,
   }, {
-    title: 'Услуга 4',
-    image: process.env.PUBLIC_URL + '/static/images/woodman.jpg',
+    title: 'Профгигиена и отбеливание',
+    image: require('assets/images/services/cleaning.webp'),
     gridMd: 3,
   }
 

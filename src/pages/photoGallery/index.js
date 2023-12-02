@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Container, ImageList, ImageListItem, Typography } from '@mui/material'
-import { imgConfig } from './photoConfig'
+import { imgConfig } from './photo.сonfig'
 import './styles.scss'
 
 function srcset(image, size, rows = 1, cols = 1) {

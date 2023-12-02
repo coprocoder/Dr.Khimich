@@ -2,6 +2,7 @@ import { Backdrop, CircularProgress } from '@mui/material'
 import loadable from '@loadable/component'
 import React from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
+import Guarantees from './pages/guarantees'
 
 const Waiter = () => (
   <Backdrop open={true} sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}>
@@ -33,6 +34,7 @@ const Router = () => {
       <Routes>
         <Route exact path='/' element={<HomePage />} />
         <Route path='/prices' element={<PriceGallery />} />
+        <Route path='/guarantees' element={<Guarantees />} />
         <Route path='/rates' element={<Rates />} />
         <Route path='/photos' element={<PhotoGallery />} />
         <Route path='/contacts' element={<Contacts />} />

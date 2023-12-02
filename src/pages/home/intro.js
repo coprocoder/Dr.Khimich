@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, Container, Typography} from "@mui/material";
+import FeedbackDialog from '../../components/pageBase/header/feedbackDialog'
 
 const HomeIntro = () => {
   const bgGradient = [
@@ -18,7 +19,7 @@ const HomeIntro = () => {
         height: "100vh",
         backgroundImage: `
           ${bgGradient},
-          url(${process.env.PUBLIC_URL + "/static/images/woodman.jpg"})`,
+          url(${require('assets/images/slide-1.jpg')})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
@@ -51,11 +52,12 @@ const HomeIntroBody = () => {
       >
         Хотите свой покажу?
       </Typography>
-      <Button href="#/photos" variant="contained"
-              // color={'secondary'}
-              sx={{ mt: 4, px : 4 }}>
-        Галерея
-      </Button>
+      {/*<Button href="#/photos" variant="contained"*/}
+      {/*        // color={'secondary'}*/}
+      {/*        sx={{ mt: 4, px : 4 }}>*/}
+      {/*  Галерея*/}
+      {/*</Button>*/}
+      <FeedbackDialog />
     </Container>
   );
 };
