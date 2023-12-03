@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-// import { Link } from 'react-router-dom'
-
 import {
   Divider, Drawer, IconButton, List, ListItem, ListItemText, Box, ListItemIcon, Link
 } from '@mui/material'
 import Close from '@mui/icons-material/Close'
 import { Menu } from '@mui/icons-material'
+
+import { ReactComponent as LogoMax } from 'assets/images/logo/logo_max.svg'
 import { menuConfig } from './menu.config'
 import FeedbackDialog from '../feedbackDialog'
 import '../header.scss'
@@ -15,11 +15,18 @@ function HeaderMenuDrawer() {
   return (
     <>
       <Drawer
+        sx={{ background: 'primary' }}
+        variant={'persistent'}
         anchor={'right'}
         open={!!isVisible}
         onClose={() => setVisible(false)}>
         <Box sx={{ p: 1, width: '100vw' }}>
           <Box sx={{ mb: 1, display: 'flex', justifyContent: 'flex-end' }}>
+            {/*<LogoMax />*/}
+            <Link variant='body2' color='text.primary' href={`/`}
+                  sx={{ flexGrow: 1, my: 1, mx: 1.5 }} className='header-logo'>
+              <LogoMax />
+            </Link>
             <IconButton
               onClick={() => setVisible(!isVisible)}
               sx={{ color: 'text.primary' }}>

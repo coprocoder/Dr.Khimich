@@ -13,6 +13,9 @@ const Waiter = () => (
 const HomePage = loadable(() => import('./pages/home'), {
   fallback: <Waiter />
 })
+const AboutPage = loadable(() => import('./pages/about'), {
+  fallback: <Waiter />
+})
 const PriceGallery = loadable(() => import('./pages/prices'), {
   fallback: <Waiter />
 })
@@ -33,6 +36,7 @@ const Router = () => {
     <HashRouter>
       <Routes>
         <Route exact path='/' element={<HomePage />} />
+        <Route path='/about' element={<AboutPage />} />
         <Route path='/prices' element={<PriceGallery />} />
         <Route path='/guarantees' element={<Guarantees />} />
         <Route path='/rates' element={<Rates />} />
