@@ -36,7 +36,7 @@ function HeaderMenuDrawer() {
                 <Link key={`menuItem_${i}`} color='text.primary' href={x.link} className={'headerLink'}>
                   <ListItem onClick={() => setVisible(false)}>
                     <ListItemIcon>
-                      {!!MenuItemIcon && (<MenuItemIcon sx={{ color: 'primary.main' }} />)}
+                      {!!MenuItemIcon && (<MenuItemIcon />)}
                     </ListItemIcon>
                     <ListItemText>{x.label}</ListItemText>
                   </ListItem>

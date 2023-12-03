@@ -1,0 +1,19 @@
+$textMain: #fff;
+$primary: #5d4037; // mui brown[700]
+$primaryLight: #bcaaa4; // mui brown[200]
+$primaryHover: #795548; // mui brown[500]
+$primaryDark: #3e2723; // mui brown[900]
+
+:root {
+  --textMain: #{$textMain};
+  --primary: #{$primary};
+  --primaryLight: #{$primaryLight};
+  --primaryHover: #{$primaryHover};
+  --primaryDark: #{$primaryDark};
+  --gray: rgb(160, 160, 160);
+}
+
+:export {
+  primary: $primary;
+  primaryLight: $primaryLight;
+}

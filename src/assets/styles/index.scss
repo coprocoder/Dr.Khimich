@@ -1,24 +1,16 @@
-:root {
-  --primary: hsl(10, 33%, 30%);
-  --primarySecond: hsl(10, 33%, 50%);
-
-  --darkWhiteTransparent: rgba(235, 235, 235, 0.9);
-  --gray: rgb(160, 160, 160);
-
-  --black7: rgba(0, 0, 0, .7);
-  --black9: rgba(0, 0, 0, .9);
-}
+@import "Text";
+@import "Colors";
 
 html,
 body {
-  background-color: var(--black9);
+  background-color: black;
   margin: 0;
   overscroll-behavior: none;
 }
 
 body {
   overflow-x: hidden;
-  overflow-y: overlay;
+  overflow-y: scroll;
 
   ::-webkit-scrollbar {
     display: none;
@@ -52,8 +44,8 @@ a:-webkit-any-link {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  //color: var(--primary);
-  //&:hover {
-  //  color: var(--primarySecond);
-  //}
+  color: var(--primaryLight);
+  &:hover {
+    color: var(--primaryHover);
+  }
 }

@@ -3,14 +3,23 @@ import PageHeader from './components/pageBase/header'
 import PageFooter from './components/pageBase/footer'
 
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-import { grey, blueGrey } from '@mui/material/colors'
+import { grey, brown } from '@mui/material/colors'
 import Router from './router'
+import palette from './assets/styles/Colors.scss'
 
 const theme = createTheme({
   palette: {
     mode: 'dark',
-    primary: blueGrey,
-    secondary: grey
+    primary: {
+      main: palette.primary,
+      light: palette.primaryLight,
+      dark: palette.primaryDark
+    },
+    secondary: {
+      main: grey[400],
+      light: grey[100],
+      dark: grey[800]
+    },
   },
   typography: {
     allVariants: {
@@ -30,3 +39,10 @@ function App() {
 }
 
 export default App
+
+/** TODO: список планов
+ * 1. param.id на страницах с табами
+ * 2. Карусель
+ *
+
+ */

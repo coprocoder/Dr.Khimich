@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { Box, Typography, TextField, Button, useTheme } from '@mui/material'
+import { Box, Typography, TextField, Button, Link, useTheme } from '@mui/material'
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 
-function FeedbackWidget({sx}) {
+function FeedbackWidget({ sx }) {
   const { palette } = useTheme()
   return (
     <Box className={'feedbackForm'} sx={{
@@ -26,8 +26,9 @@ function FeedbackWidget({sx}) {
 
       <Box sx={{ textAlign: 'left', display: 'flex', mt: 4 }}>
         <input type='checkbox' id='checkbox_policy' style={{ width: '4em', marginRight: '1em' }} />
-        <label htmlFor={'checkbox_policy'} style={{ color: palette.text.primary }}>Даю согласие на обработку персональных
-          данных, соглашаюсь с политикой конфиденциальности</label>
+        <label htmlFor={'checkbox_policy'} style={{ color: palette.text.primary }}>Даю согласие на обработку
+          персональных данных, соглашаюсь с <Link href='/'>политикой конфиденциальности</Link>
+        </label>
       </Box>
 
       <Button variant='contained' startIcon={<PhoneInTalkIcon />}

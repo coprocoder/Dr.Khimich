@@ -1,65 +1,55 @@
-import React from "react";
-import {Button, Container, Typography} from "@mui/material";
-import FeedbackDialog from '../../components/pageBase/header/feedbackDialog'
+import React from 'react'
+import { Container, Typography } from '@mui/material'
 
 const HomeIntro = () => {
   const bgGradient = [
-    `linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.7))`,
-    // `linear-gradient(var(----black9), var(----black7)`,
-  ].join(",");
+    `linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.7))`
+  ].join(',')
 
   return (
     <Container
       disableGutters
-      component="main"
+      component='main'
       maxWidth={false}
       sx={{
-        display: "flex",
-        alignItems: "center",
-        height: "100vh",
+        display: 'flex',
+        alignItems: 'center',
+        height: '100vh',
         backgroundImage: `
           ${bgGradient},
-          url(${require('assets/images/slide-1.jpg')})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
-    >
+          url(${require('assets/images/cabinet.jpg')})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover'
+      }}>
       <HomeIntroBody />
     </Container>
-  );
-};
+  )
+}
 
 const HomeIntroBody = () => {
   return (
     <Container
       disableGutters
-      maxWidth="sm"
-      component="main"
-      sx={{ py: 6, px: 2, textAlign: "center" }}
-    >
-      <Typography
-        component="h1"
-        variant="h2"
-        color="text.primary"
-        gutterBottom
-        sx={{ fontWeight: "bold" }}
-      >
-        Такой красивый логотип у вас
+      maxWidth='sm'
+      component='main'
+      sx={{
+        py: 6, px: 2, textAlign: 'center',
+        backdropFilter: 'brightness(0.4)',
+        borderRadius: 4
+      }}>
+      <Typography component='h1'variant='h2'
+        sx={{ fontWeight: 'bold', lineHeight: 1 }}>
+        DR.KHIMICH
       </Typography>
-      <Typography
-        variant="h5"
-        color="text.secondary"
-      >
-        Хотите свой покажу?
+      <Typography variant='h6' gutterBottom
+        sx={{ fontWeight: 'bold', lineHeight: 1 }} >
+       DENTAL CLINIC
       </Typography>
-      {/*<Button href="#/photos" variant="contained"*/}
-      {/*        // color={'secondary'}*/}
-      {/*        sx={{ mt: 4, px : 4 }}>*/}
-      {/*  Галерея*/}
-      {/*</Button>*/}
-      <FeedbackDialog />
+      <Typography variant='body1' color='text.secondary' mt={4}>
+        Комплексная диагностика и лечение
+      </Typography>
     </Container>
-  );
-};
+  )
+}
 
-export default HomeIntro;
+export default HomeIntro
