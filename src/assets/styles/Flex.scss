@@ -1,0 +1,23 @@
+@mixin gridToCarousel() {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+  //grid-auto-flow: column;
+  //grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)) !important;
+  //grid-auto-columns: minmax(20rem, 1fr);
+}
+
+.gridCarousel.MuiGrid-root{
+  @include gridToCarousel();
+}
+
+@media only screen and (max-width: 900px) {
+  .gridFlexible.MuiGrid-root {
+    @include gridToCarousel();
+    .MuiGrid-item {
+      & > :nth-child(1) {
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+}

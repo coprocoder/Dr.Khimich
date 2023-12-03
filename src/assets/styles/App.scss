@@ -1,5 +1,6 @@
 @import "Text";
 @import "Colors";
+@import "Flex";
 
 html,
 body {
@@ -11,27 +12,25 @@ body {
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
   background: transparent;
+  &:hover {
+    background: color-mix(in srgb, var(--gray), transparent 80%);
+  }
 }
-
 ::-webkit-scrollbar-thumb {
-  background: color-mix(in srgb, var(--gray), transparent 90%);
+  background: color-mix(in srgb, var(--gray), transparent 80%);
   border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--gray);
+  &:hover {
+    background: var(--gray);
+  }
 }
 
 *,
@@ -45,6 +44,7 @@ a:-webkit-any-link {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   color: var(--primaryLight);
+
   &:hover {
     color: var(--primaryHover);
   }
