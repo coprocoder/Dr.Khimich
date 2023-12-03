@@ -19,7 +19,7 @@ function FeedbackWidget({ sx }) {
       </Typography>
       <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
         <PermIdentityOutlinedIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-        <TextField autoFocus id='test' label='Имя' fullWidth variant='standard' sx={{ mt: 2 }} color={'secondary'} />
+        <TextField id='test' label='Имя' fullWidth variant='standard' sx={{ mt: 2 }} color={'secondary'} />
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
         <LocalPhoneOutlinedIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Typography } from '@mui/material'
+import { NextPageBtn } from '../../components/kit/NextPageBtn'
 
 const HomeIntro = () => {
   const bgGradient = [
@@ -22,6 +23,7 @@ const HomeIntro = () => {
         backgroundSize: 'cover'
       }}>
       <HomeIntroBody />
+      <NextPageBtn id={'services'}/>
     </Container>
   )
 }
