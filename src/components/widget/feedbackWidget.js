@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { Box, Typography, TextField, Button, Link, useTheme } from '@mui/material'
+import { Box, Typography, TextField, Button, Link, useTheme, Checkbox } from '@mui/material'
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 
-function FeedbackWidget({ sx }) {
+function FeedbackWidget({ sx, btnSx }) {
   const { palette } = useTheme()
   return (
     <Box className={'feedbackForm'} sx={{
@@ -13,7 +13,9 @@ function FeedbackWidget({ sx }) {
       <Typography variant={'h3'} sx={{ marginBottom: 2 }}>Запись на консультацию</Typography>
       <Typography sx={{ marginBottom: 2 }}>Укажите свои данные, мы перезвоним и подберём для вас удобное время приёма.
         Или позвоните нам сами —
-        <Typography variant={'h5'} sx={{ fontWeight: 'bold' }}>+7 (908) 216-66-11</Typography>
+        <Link href={'tel:+79082166611'}>
+          <Typography variant={'h5'} sx={{ fontWeight: 'bold' }}>+7 (908) 216-66-11</Typography>
+        </Link>
       </Typography>
       <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
         <PermIdentityOutlinedIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
@@ -24,15 +26,15 @@ function FeedbackWidget({ sx }) {
         <TextField id='test' label='Телефон' fullWidth variant='standard' sx={{ mt: 2 }} color={'secondary'} />
       </Box>
 
-      <Box sx={{ textAlign: 'left', display: 'flex', mt: 4 }}>
-        <input type='checkbox' id='checkbox_policy' style={{ width: '4em', marginRight: '1em' }} />
+      <Box sx={{ textAlign: 'left', display: 'flex', gap: 2, mt: 4, alignItems: 'center' }}>
+        <Checkbox id='checkbox_policy' style={{ transform: "scale(2)" }} color={'secondary'} size={'medium'} />
         <label htmlFor={'checkbox_policy'} style={{ color: palette.text.primary }}>Даю согласие на обработку
           персональных данных, соглашаюсь с <Link href='/'>политикой конфиденциальности</Link>
         </label>
       </Box>
 
       <Button variant='contained' startIcon={<PhoneInTalkIcon />}
-              sx={{ mt: 4, borderRadius: 10, paddingX: 4, paddingY: 2 }}>Записаться</Button>
+              sx={{ mt: 4, borderRadius: 10, paddingX: 4, paddingY: 2, ...btnSx }}>Записаться</Button>
     </Box>
   )
 }

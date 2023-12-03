@@ -22,7 +22,7 @@ function HeaderMenuDrawer() {
           <Box sx={{ mb: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <IconButton
               onClick={() => setVisible(!isVisible)}
-              sx={{ color: 'white' }}>
+              sx={{ color: 'text.primary' }}>
               <Close />
             </IconButton>
           </Box>
@@ -33,7 +33,7 @@ function HeaderMenuDrawer() {
             {menuConfig.map((x, i) => {
               const MenuItemIcon = x?.icon
               return (
-                <Link key={`menuItem_${i}`} color='text.primary' href={x.link} className={'headerLink'}>
+                <Link key={`menuItem_${i}`} href={x.link} className={'headerLink'}>
                   <ListItem onClick={() => setVisible(false)}>
                     <ListItemIcon>
                       {!!MenuItemIcon && (<MenuItemIcon />)}

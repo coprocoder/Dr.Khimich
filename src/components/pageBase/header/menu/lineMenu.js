@@ -21,7 +21,6 @@ const MenuNav = () => {
           variant='button'
           href={x.link}
           sx={{ my: 1, mx: 1.5 }}
-          color='text.primary'
           className={'headerLink'}
         > {x.label}
         </Link>

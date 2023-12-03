@@ -19,7 +19,19 @@ const theme = createTheme({
       main: grey[400],
       light: grey[100],
       dark: grey[800]
-    },
+    }
+  },
+  components: {
+    // MuiButton: {
+    //   styleOverrides: {
+    //     root: {
+    //       background: palette.primaryLight,
+    //       '&.MuiButton-contained': {
+    //         background: palette.primaryLight
+    //       }
+    //     }
+    //   }
+    // }
   },
   typography: {
     allVariants: {
