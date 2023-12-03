@@ -62,13 +62,16 @@ const FooterContacts = () => {
 
       {/* Social links*/}
       <Box sx={{ mt: 2, display: 'flex', gap: 1 }}>
-        <Link href={'https://vk.com/dr.khimich'} variant='subtitle1' color='text.secondary'>
+        <Link href={'https://vk.com/dr.khimich'} variant='subtitle1' color='text.secondary' target='_blank'
+              rel='noreferrer'>
           <IconVk width={32} />
         </Link>
-        <Link href={'https://api.whatsapp.com/send/?phone=79082166611'} variant='subtitle1' color='text.secondary'>
+        <Link href={'https://api.whatsapp.com/send/?phone=79082166611'} variant='subtitle1' color='text.secondary'
+              target='_blank' rel='noreferrer'>
           <IconWhatsApp width={32} />
         </Link>
-        <Link href={'viber://contact?number=%2B79082166611'} variant='subtitle1' color='text.secondary'>
+        <Link href={'viber://contact?number=%2B79082166611'} variant='subtitle1' color='text.secondary' target='_blank'
+              rel='noreferrer'>
           <IconViber width={32} />
         </Link>
       </Box>

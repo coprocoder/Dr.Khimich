@@ -44,20 +44,18 @@ const PriceGallery = () => {
           <Box sx={{ mt: 2 }}>
             <Typography color={'text.secondary'}>Цены на сайте не являются публичной офертой.</Typography>
             <Typography color={'text.secondary'}>С полным прейскурантом на услуги стоматологии вы можете ознакомиться
-              <Link href='https://stomcomplex24.ru/price'
-                    target='_blank' rel='noreferrer'> по ссылке</Link>.
+              <Link href='https://stomcomplex24.ru/price' target='_blank' rel='noreferrer'> по ссылке</Link>.
             </Typography>
             <Typography color={'text.secondary'}>Составление точного плана лечения с указанием стоимости услуг требует
               очной консультаций с лечащим
               врачом и проведения диагностики.</Typography>
             <Typography color={'text.secondary'}>На услуги предоставляются
-              <Link href='/#/guarantees'
-                    target='_blank' rel='noreferrer'> гарантии</Link>.
+              <Link href='/#/guarantees'> гарантии</Link>.
             </Typography>
           </Box>
         </Box>
         <Box>
-          <FeedbackWidget sx={{ bgcolor: 'primary.dark', borderRadius: 4 }} btnSx={{bgcolor: 'primary.main'}} />
+          <FeedbackWidget sx={{ bgcolor: 'primary.dark', borderRadius: 4 }} btnSx={{ bgcolor: 'primary.main' }} />
         </Box>
       </Box>
     </Container>

@@ -22,20 +22,29 @@ const theme = createTheme({
     }
   },
   components: {
-    // MuiButton: {
-    //   styleOverrides: {
-    //     root: {
-    //       background: palette.primaryLight,
-    //       '&.MuiButton-contained': {
-    //         background: palette.primaryLight
-    //       }
-    //     }
-    //   }
-    // }
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: 'var(--primaryLight)',
+          '&:hover': {
+            color: 'var(--primaryHover)'
+          }
+        }
+      }
+    }
   },
   typography: {
     allVariants: {
       color: 'white'
+    }
+  },
+  breakpoints: {
+    values: {
+      xs: 0,      // 0
+      sm: 600,    // 600
+      md: 900,    // 900
+      lg: 1400,   // 1200
+      xl: 1610    // 1536
     }
   }
 })

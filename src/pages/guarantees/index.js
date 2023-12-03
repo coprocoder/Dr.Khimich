@@ -36,7 +36,7 @@ const Guarantees = () => {
               borderBottom: (theme) => `1px solid ${theme.palette.divider}`
             }}>
               <ListItemText primary={item.title} />
-              <Typography sx={{ fontWeight: 'bold', whiteSpace: 'nowrap' }}>{item.value} ₽</Typography>
+              <Typography sx={{ fontWeight: 'bold', whiteSpace: 'nowrap' }}>{item.value}</Typography>
             </ListItem>
           ))}
         </List>
