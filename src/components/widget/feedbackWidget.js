@@ -4,7 +4,7 @@ import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 
-function FeedbackWidget({ sx, btnSx }) {
+function FeedbackWidget({ sx }) {
   const { palette } = useTheme()
   return (
     <Box className={'feedbackForm'} sx={{
@@ -27,14 +27,13 @@ function FeedbackWidget({ sx, btnSx }) {
       </Box>
 
       <Box sx={{ textAlign: 'left', display: 'flex', gap: 2, mt: 4, alignItems: 'center' }}>
-        <Checkbox id='checkbox_policy' style={{ transform: "scale(2)" }} color={'secondary'} size={'medium'} />
+        <Checkbox id='checkbox_policy' style={{ transform: 'scale(2)' }} color={'secondary'} size={'medium'} />
         <label htmlFor={'checkbox_policy'} style={{ color: palette.text.primary }}>Даю согласие на обработку
           персональных данных, соглашаюсь с <Link href='/'>политикой конфиденциальности</Link>
         </label>
       </Box>
 
-      <Button variant='contained' startIcon={<PhoneInTalkIcon />}
-              sx={{ mt: 4, borderRadius: 10, paddingX: 4, paddingY: 2, ...btnSx }}>Записаться</Button>
+      <Button variant='contained' startIcon={<PhoneInTalkIcon />} sx={{ mt: 4 }} size={'large'}>Записаться</Button>
     </Box>
   )
 }

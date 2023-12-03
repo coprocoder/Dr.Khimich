@@ -1,6 +1,7 @@
 import React from 'react'
-import { Box, Container, Grid, styled, Typography } from '@mui/material'
+import { Box, Button, Card, Container, Grid, Link, styled, Typography } from '@mui/material'
 import { serviceConfig } from './service.config'
+import CardImage from '../../../components/kit/CardImage'
 
 const Services = () => {
   const openService = (url) => {
@@ -9,7 +10,10 @@ const Services = () => {
 
   return (
     <Container sx={{ paddingY: 8 }}>
-      <Typography variant='h3' gutterBottom mt={3}>Предоставляем услуги</Typography>
+      <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Typography variant='h3' gutterBottom mt={3}>Предоставляем услуги</Typography>
+        <Button variant='outlined' onClick={openService} color={'secondary'}>Все услуги</Button>
+      </Box>
       <Grid container spacing={2} className={'gridFlexible'}>
         {serviceConfig.map((x, i) => (
           <Grid item key={`service${i}`} onClick={openService} xs={12} sm={6} md={x.gridMd}>
@@ -20,28 +24,14 @@ const Services = () => {
     </Container>
   )
 }
-
 const ServiceCard = ({ config }) => {
   const bgOpacity = 0.5
   const gradient = `linear-gradient(rgba(0,0,0,${bgOpacity}), rgba(0,0,0,${bgOpacity}))`
   return (
-    <CardItem sx={{
-      backgroundImage: `${gradient},url(${config.image})`
-    }}>
-      <Typography variant='h5'>{config.title}</Typography>
-    </CardItem>
+    <CardImage sx={{ background: `${gradient},url(${config.image})` }}>
+        <Typography variant='h5'>{config.title}</Typography>
+    </CardImage>
   )
 }
-
-
-const CardItem = styled(Box)(({ theme }) => ({
-  height: '20rem',
-  backgroundSize: 'cover',
-  padding: theme.spacing(2),
-  borderRadius: theme.spacing(2),
-  display: 'flex',
-  alignItems: 'flex-end'
-}))
-
 export default Services
 

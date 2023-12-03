@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Container, Grid, styled, Typography } from '@mui/material'
 import { doctorsConfig } from './doctors.config'
+import CardImage from '../../../components/kit/CardImage'
 
 const Doctors = () => {
   const onClickCard = (url) => {
@@ -21,31 +22,16 @@ const Doctors = () => {
     </Container>
   )
 }
-
 const DoctorCard = ({ config }) => {
   const bgOpacity = 0.5
   const gradient = `linear-gradient(rgba(0,0,0,${bgOpacity}), rgba(0,0,0,${bgOpacity}))`
   return (
-    <CardItem sx={{
-      backgroundImage: `${gradient},url(${config.image})`,
-    }}>
-      <Box>
-        <Typography variant='h5'>{config.name}</Typography>
-        <Typography variant='subtitle1' color={'text.secondary'}>{config.state}</Typography>
-      </Box>
-    </CardItem>
+    <CardImage sx={{ background: `${gradient},url(${config.image})`, aspectRatio: 1 }}>
+      <Typography variant='h5'>{config.name}</Typography>
+      <Typography variant='subtitle1' color={'text.secondary'}>{config.state}</Typography>
+    </CardImage>
   )
 }
-
-const CardItem = styled(Box)(({ theme }) => ({
-  height: '20rem',
-  width: '20rem',
-  backgroundSize: 'cover',
-  padding: theme.spacing(2),
-  borderRadius: theme.spacing(2),
-  display: 'flex',
-  alignItems: 'flex-end'
-}))
 
 export default Doctors
 

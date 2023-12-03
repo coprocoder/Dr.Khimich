@@ -7,7 +7,9 @@ import { grey, brown } from '@mui/material/colors'
 import Router from './router'
 import palette from './assets/styles/Colors.scss'
 
-const theme = createTheme({
+let theme = createTheme({})
+theme = createTheme({
+  ...theme,
   palette: {
     mode: 'dark',
     primary: {
@@ -29,6 +31,16 @@ const theme = createTheme({
           '&:hover': {
             color: 'var(--primaryHover)'
           }
+        }
+      }
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: theme.spacing(100),
+        },
+        sizeLarge: {
+          padding: `${theme.spacing(2)} ${theme.spacing(4)}`,
         }
       }
     }
