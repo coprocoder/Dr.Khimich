@@ -1,14 +1,16 @@
 import React from 'react'
-import { Container } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import FeedbackWidget from '../../../components/widget/feedbackWidget'
 import YandexMap from '../../../components/widget/map'
 import './contacts.scss'
 
 const Contacts = () => {
   return (
-    <Container className={'contacts'} sx={{ marginY: 8, bgcolor: 'divider', borderRadius: 4 }}>
-      <FeedbackWidget  />
-      <YandexMap />
+    <Container sx={{ marginY: 8 }}>
+      <Box className={'contacts'} sx={{ marginY: 8, paddingX: 2, bgcolor: 'divider', borderRadius: 4 }}>
+        <FeedbackWidget />
+        <YandexMap />
+      </Box>
     </Container>
   )
 }
