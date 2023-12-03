@@ -4,11 +4,12 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 export const menuConfig = [
+  // {
+  //   link: `${process.env.PUBLIC_URL}/#/about`,
+  //   label: 'О нас',
+  //   icon: InfoIcon
+  // },
   {
-    link: `${process.env.PUBLIC_URL}/#/about`,
-    label: 'О нас',
-    icon: InfoIcon
-  }, {
     link: `${process.env.PUBLIC_URL}/#/prices`,
     label: 'Цены',
     icon: SellIcon
