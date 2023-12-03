@@ -4,7 +4,7 @@ import { serviceConfig } from './service.config'
 
 const Services = () => {
   const openService = (url) => {
-    window.open('#/prices', '_blank', 'noreferrer')
+    window.open('#/prices')
   }
 
   return (

@@ -4,7 +4,7 @@ import { doctorsConfig } from './doctors.config'
 
 const Doctors = () => {
   const onClickCard = (url) => {
-    window.open('#/prices', '_blank', 'noreferrer')
+    window.open('#/prices')
   }
 
   return (
