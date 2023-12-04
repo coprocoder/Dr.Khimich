@@ -7,9 +7,9 @@ const Contacts = () => {
   return (
     <Container>
       <Typography variant='h3' gutterBottom mt={3}>Контакты</Typography>
-      <Box className={'contacts'}>
-        <Box sx={{ bgcolor: 'divider', borderRadius: 4, padding: 4 }}>
-          {/*<Typography variant={'h5'} sx={{ marginBottom: 1 }}>{'Контакты'}</Typography>*/}
+      <Box className={'contacts'} sx={{ bgcolor: 'divider', borderRadius: 4 }}>
+        <Box sx={{ padding: 4 }}>
+          <Typography variant='h5' gutterBottom>Dr.Khimich</Typography>
           <List sx={{ flex: 1 }}>
             <ListItem disableGutters sx={{ pt: 1 }}>
               <Typography sx={{ fontWeight: 'bold', mr: 1 }}>Телефон:</Typography>
@@ -27,7 +27,7 @@ const Contacts = () => {
             </Box>
           </List>
         </Box>
-        <YandexMap sx={{ minHeight: 200 }} />
+        <YandexMap  />
       </Box>
     </Container>
   )
