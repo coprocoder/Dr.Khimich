@@ -7,36 +7,21 @@ import './header.scss'
 import HeaderMenuDrawer from './menu/drawer'
 import HeaderMenuFull from './menu/lineMenu'
 
-const HideOnScroll = (props) => {
-  const { children, window } = props
-  const trigger = useScrollTrigger({
-    target: window ? window() : undefined
-  })
-
-  return (
-    <Slide appear={false} direction='down' in={!trigger}>
-      {children}
-    </Slide>
-  )
-}
-
 const Header = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
-    <HideOnScroll>
-      <AppBar position='sticky' elevation={0}
-              sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}>
-        <Toolbar sx={{ flexWrap: 'wrap' }} className='header'>
-          <Link variant='body2' color='text.primary' href={`/`}
-                sx={{ flexGrow: 1, my: 1, mx: 1.5 }} className='header-logo'>
-            {isMobile ? <LogoMin /> : <LogoMax />}
-          </Link>
-          {isMobile ? <HeaderMenuDrawer /> : <HeaderMenuFull />}
-        </Toolbar>
-      </AppBar>
-    </HideOnScroll>
+    <AppBar position='relative' elevation={0}
+            sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}>
+      <Toolbar sx={{ flexWrap: 'wrap' }} className='header'>
+        <Link variant='body2' color='text.primary' href={`/`}
+              sx={{ flexGrow: 1, my: 1, mx: 1.5 }} className='header-logo'>
+          {isMobile ? <LogoMin /> : <LogoMax />}
+        </Link>
+        {isMobile ? <HeaderMenuDrawer /> : <HeaderMenuFull />}
+      </Toolbar>
+    </AppBar>
   )
 }
 
