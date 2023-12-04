@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/WoodWorkshop/static/css/main.54e8dcbb.css",
-    "main.js": "/WoodWorkshop/static/js/main.d6fcccfd.js",
+    "main.js": "/WoodWorkshop/static/js/main.1ce5a3ef.js",
     "static/css/94.a98c2f10.chunk.css": "/WoodWorkshop/static/css/94.a98c2f10.chunk.css",
-    "static/js/94.4a3fba93.chunk.js": "/WoodWorkshop/static/js/94.4a3fba93.chunk.js",
+    "static/js/94.3cfc39d3.chunk.js": "/WoodWorkshop/static/js/94.3cfc39d3.chunk.js",
     "static/css/136.20b979a4.chunk.css": "/WoodWorkshop/static/css/136.20b979a4.chunk.css",
-    "static/js/136.910a5e04.chunk.js": "/WoodWorkshop/static/js/136.910a5e04.chunk.js",
+    "static/js/136.9593f455.chunk.js": "/WoodWorkshop/static/js/136.9593f455.chunk.js",
     "static/css/559.5bc6728d.chunk.css": "/WoodWorkshop/static/css/559.5bc6728d.chunk.css",
     "static/js/559.23f39452.chunk.js": "/WoodWorkshop/static/js/559.23f39452.chunk.js",
     "static/css/893.b87b3876.chunk.css": "/WoodWorkshop/static/css/893.b87b3876.chunk.css",
@@ -35,11 +35,11 @@
     "index.html": "/WoodWorkshop/index.html",
     "static/media/icon-vk.svg": "/WoodWorkshop/static/media/icon-vk.506de7ed26dd081a426ce00488a79dc2.svg",
     "main.54e8dcbb.css.map": "/WoodWorkshop/static/css/main.54e8dcbb.css.map",
-    "main.d6fcccfd.js.map": "/WoodWorkshop/static/js/main.d6fcccfd.js.map",
+    "main.1ce5a3ef.js.map": "/WoodWorkshop/static/js/main.1ce5a3ef.js.map",
     "94.a98c2f10.chunk.css.map": "/WoodWorkshop/static/css/94.a98c2f10.chunk.css.map",
-    "94.4a3fba93.chunk.js.map": "/WoodWorkshop/static/js/94.4a3fba93.chunk.js.map",
+    "94.3cfc39d3.chunk.js.map": "/WoodWorkshop/static/js/94.3cfc39d3.chunk.js.map",
     "136.20b979a4.chunk.css.map": "/WoodWorkshop/static/css/136.20b979a4.chunk.css.map",
-    "136.910a5e04.chunk.js.map": "/WoodWorkshop/static/js/136.910a5e04.chunk.js.map",
+    "136.9593f455.chunk.js.map": "/WoodWorkshop/static/js/136.9593f455.chunk.js.map",
     "559.5bc6728d.chunk.css.map": "/WoodWorkshop/static/css/559.5bc6728d.chunk.css.map",
     "559.23f39452.chunk.js.map": "/WoodWorkshop/static/js/559.23f39452.chunk.js.map",
     "893.b87b3876.chunk.css.map": "/WoodWorkshop/static/css/893.b87b3876.chunk.css.map",
@@ -55,6 +55,6 @@
   },
   "entrypoints": [
     "static/css/main.54e8dcbb.css",
-    "static/js/main.d6fcccfd.js"
+    "static/js/main.1ce5a3ef.js"
   ]
 }
