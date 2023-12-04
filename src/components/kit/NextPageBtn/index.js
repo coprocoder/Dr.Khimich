@@ -10,8 +10,7 @@ export const NextPageBtn = ({ id }) => {
   // Opacity observer
   useEffect(() => {
     const handleScroll = () => {
-      const position = window.pageYOffset
-      setOpacity(defaultOpacity - (position / window.screen.height) * 2)
+      setOpacity(defaultOpacity - (window.pageYOffset / window.screen.height) * 4)
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => {

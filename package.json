@@ -12,6 +12,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@egjs/react-flicking": "^4.11.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@loadable/component": "^5.15.3",

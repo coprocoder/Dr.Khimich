@@ -1,10 +1,10 @@
 import { Box } from '@mui/material'
 import React from 'react'
 
-const CardImage = ({ children, sx }) => {
+const CardImage = ({ children, sx, onClick, zoomDisable }) => {
   const { background, ...styles} = sx;
   return (
-    <Box sx={{
+    <Box onClick={onClick} sx={{
       height: '20rem',
       borderRadius: 2,
       overflow: 'hidden',
@@ -18,9 +18,9 @@ const CardImage = ({ children, sx }) => {
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        transition: 'all 1s',
+        transition: 'all 0.3s',
         '&:hover': {
-          transform: 'scale(1.1)'
+          transform: !zoomDisable ? 'scale(1.1)' : ''
         }
       }} />
       <Box sx={{ position: 'absolute', bottom: 0, padding: 2 }}>

@@ -43,6 +43,13 @@ theme = createTheme({
           padding: `${theme.spacing(2)} ${theme.spacing(4)}`,
         }
       }
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          borderRadius: theme.spacing(2),
+        }
+      }
     }
   },
   typography: {
@@ -52,7 +59,7 @@ theme = createTheme({
   },
   breakpoints: {
     values: {
-      xs: 0,      // 0
+      xs: 200,      // 0
       sm: 600,    // 600
       md: 900,    // 900
       lg: 1400,   // 1200
