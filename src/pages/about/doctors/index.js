@@ -1,17 +1,5 @@
 import React from 'react'
-import {
-  Box,
-  Button,
-  Card,
-  CardContent,
-  CardMedia,
-  Container,
-  Grid,
-  Link,
-  styled,
-  Typography,
-  useTheme
-} from '@mui/material'
+import { Box, Button, Card, CardContent, Container, Typography, useTheme } from '@mui/material'
 import { doctorsConfig } from './doctors.config'
 import CardImage from '../../../components/kit/CardImage'
 import Flicking from '@egjs/react-flicking'
@@ -20,7 +8,7 @@ const Doctors = () => {
   return (
     <Container sx={{ paddingY: 8 }}>
       <Typography variant='h3' gutterBottom mt={3}>Наши специалисты</Typography>
-      <Flicking useFindDOMNode horizontal circular renderOnlyVisible>
+      <Flicking useFindDOMNode horizontal bound style={{ overflow: 'visible' }}>
         {doctorsConfig.map((config, i) => (
           <DoctorCard key={`doctor${i}`} config={config} />
         ))}
@@ -51,8 +39,10 @@ const DoctorCard = ({ config }) => {
         <Box>
           <Typography variant='h5'>{config.name}</Typography>
           <Typography variant='subtitle1' color={'text.secondary'}>{config.state}</Typography>
-          {/*<Typography variant='body1' sx={{ mt: 2 }}>Опыт работы: 16 лет</Typography>*/}
-          <Typography variant='body1' sx={{ mt: 2 }}>{config.shortDescription}</Typography>
+          <Typography variant='subtitle1' color={'text.secondary'}>
+            Опыт работы <span style={{ fontWeight: 'bold' }}>16 лет</span>
+          </Typography>
+          <Typography variant='body1' sx={{ mt: 2 }}>{config.description}</Typography>
         </Box>
         <Box sx={{ mt: 2 }}>
           <Button variant='outlined' onClick={() => openLink(config.linkProfile)} color={'secondary'}>Подробнее</Button>
