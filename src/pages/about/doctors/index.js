@@ -17,7 +17,7 @@ const Doctors = () => {
   )
 }
 const DoctorCard = ({ config }) => {
-  const bgOpacity = 0.5
+  const bgOpacity = 0.3
   const gradient = `linear-gradient(rgba(0,0,0,${bgOpacity}), rgba(0,0,0,${bgOpacity}))`
   const theme = useTheme()
 
@@ -39,7 +39,7 @@ const DoctorCard = ({ config }) => {
         <Box>
           <Typography variant='h5'>{config.name}</Typography>
           <Typography variant='subtitle1' color={'text.secondary'}>{config.state}</Typography>
-          <Typography variant='subtitle1' color={'text.secondary'}>
+          <Typography variant='subtitle1' color={'text.secondary'} sx={{lineHeight: 1}}>
             Опыт работы <span style={{ fontWeight: 'bold' }}>16 лет</span>
           </Typography>
           <Typography variant='body1' sx={{ mt: 2 }}>{config.description}</Typography>

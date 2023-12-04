@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="svg_2_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" font-style="normal" font-weight="bold" xml:space="preserve" font-size="32" id="svg_2" y="26" x="3.96249" stroke-width="0" fill="#ffffff" style="font-family: sans-serif;">DR.KHIMICH</text>
+ </g>
+</svg>

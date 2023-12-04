@@ -9,7 +9,7 @@ const Services = () => {
   }
 
   return (
-    <Container id='services' sx={{ paddingY: 8 }}>
+    <Container id='services' sx={{ paddingTop: 8 }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Typography variant='h3' gutterBottom mt={3}>Предоставляем услуги</Typography>
         <Button variant='outlined' onClick={openService} color={'secondary'}>Все услуги</Button>
