@@ -4,7 +4,7 @@ import { doctorsConfig } from './doctors.config'
 import CardImage from '../../../components/kit/CardImage'
 import Flicking from '@egjs/react-flicking'
 
-const Doctors = () => {
+const DoctorsPage = () => {
   return (
     <Container sx={{ paddingY: 8 }}>
       <Typography variant='h3' gutterBottom mt={3}>Наши специалисты</Typography>
@@ -59,5 +59,5 @@ const DoctorCard = ({ config }) => {
   )
 }
 
-export default Doctors
+export default DoctorsPage
 

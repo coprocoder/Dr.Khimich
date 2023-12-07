@@ -3,13 +3,13 @@ import { Box, Button, Card, Container, Grid, Link, styled, Typography } from '@m
 import { serviceConfig } from './service.config'
 import CardImage from '../../../components/kit/CardImage'
 
-const Services = () => {
+const ServicesPage = () => {
   const openService = (url) => {
     window.open('#/prices')
   }
 
   return (
-    <Container id='services' sx={{ paddingTop: 8 }}>
+    <Container id='services' sx={{ paddingTop: 12, paddingBottom: 4 }}>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Typography variant='h3' gutterBottom mt={3}>Предоставляем услуги</Typography>
         <Button variant='outlined' onClick={openService} color={'secondary'}>Все услуги</Button>
@@ -33,5 +33,5 @@ const ServiceCard = ({ config }) => {
     </CardImage>
   )
 }
-export default Services
+export default ServicesPage
 

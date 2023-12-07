@@ -4,9 +4,9 @@ import FeedbackWidget from '../../../components/widget/feedbackWidget'
 import YandexMap from '../../../components/widget/map'
 import './contacts.scss'
 
-const Contacts = () => {
+const ContactsPage = () => {
   return (
-    <Container sx={{ marginY: 8 }}>
+    <Container sx={{ marginY: 12 }}>
       <Box className={'contacts'} sx={{ marginY: 8, paddingX: 2, bgcolor: 'divider', borderRadius: 4 }}>
         <FeedbackWidget />
         <YandexMap />
@@ -15,4 +15,4 @@ const Contacts = () => {
   )
 }
 
-export default Contacts
+export default ContactsPage
