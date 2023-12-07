@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Typography, Link, Container, Stack, Box } from '@mui/material'
+import { Grid, Typography, Link, Container, Stack, Box, Tooltip } from '@mui/material'
 import { sitemapConfig } from './sitemap.config'
 
 import { ReactComponent as IconVk } from '../../../assets/images/socialIcon/icon-vk.svg'
@@ -19,8 +19,12 @@ const PageFooter = () => {
       <Grid container spacing={4} justifyContent='space-evenly'>
         {sitemapConfig.map((footer) => (
           <Grid item xs={6} sm={3} key={footer.groupName}>
+
             <Typography variant='h6' color='text.primary' gutterBottom>
               {footer.groupName}
+              {footer.inProgress && (
+                <Tooltip title={'В разработке'} placement='top' disableInteractive={true}>🕑</Tooltip>
+              )}
             </Typography>
             <Stack>
               {footer.itemList.map((item) => (
