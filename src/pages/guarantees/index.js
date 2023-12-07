@@ -3,7 +3,6 @@ import {
   List, ListItem, ListItemText, Typography, Container, Chip, Stack, Box, Link
 } from '@mui/material'
 import { guaranteesConfig } from './guarantees.сonfig'
-import FeedbackWidget from '../../components/widget/feedbackWidget'
 import './styles.scss'
 
 const Guarantees = () => {
@@ -28,7 +27,7 @@ const Guarantees = () => {
         ))}
       </Stack>
       <Box>
-        <List sx={{ bgcolor: 'divider', borderRadius: 4, padding: 4 }}>
+        <List sx={{ bgcolor: 'background.paper', borderRadius: 4, padding: 4 }}>
           <Typography variant={'h5'} sx={{ marginBottom: 2 }}>{selectedGroup?.groupName}</Typography>
           {selectedGroup?.itemList.map((item) => (
             <ListItem key={item.title} disableGutters sx={{

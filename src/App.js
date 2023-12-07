@@ -21,6 +21,10 @@ theme = createTheme({
       main: grey[400],
       light: grey[100],
       dark: grey[800]
+    },
+    background: {
+      default: palette.bgPrimary,
+      paper: palette.bgSecondary
     }
   },
   components: {
@@ -48,6 +52,15 @@ theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: theme.spacing(2),
+          backgroundImage: 'none',
+        }
+      }
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          borderRadius: theme.spacing(2),
+          backgroundImage: 'none',
         }
       }
     }

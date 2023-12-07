@@ -7,7 +7,7 @@ const Contacts = () => {
   return (
     <Container>
       <Typography variant='h3' gutterBottom mt={3}>Контакты</Typography>
-      <Box className={'contacts'} sx={{ bgcolor: 'divider', borderRadius: 4 }}>
+      <Box className={'contacts'} sx={{ bgcolor: 'background.paper', borderRadius: 4 }}>
         <Box sx={{ padding: 4 }}>
           <Typography variant='h5' gutterBottom>Dr.Khimich</Typography>
           <List sx={{ flex: 1 }}>

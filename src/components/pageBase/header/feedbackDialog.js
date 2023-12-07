@@ -12,13 +12,13 @@ export default function FeedbackDialog({ btnText = 'Заказать звоно�
   const handleClose = () => setOpen(false)
 
   return (
-    <React.Fragment>
+    <>
       <Button variant='contained' onClick={handleClickOpen} size={isMobile ? 'large' : 'medium'}>
         {btnText}
       </Button>
       <Dialog open={open} onClose={handleClose}>
         <FeedbackWidget />
       </Dialog>
-    </React.Fragment>
+    </>
   )
 }

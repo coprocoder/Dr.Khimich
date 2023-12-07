@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Box, Typography, TextField, Button, Link, useTheme, Checkbox } from '@mui/material'
+import { Box, Typography, TextField, Button, Link, useTheme, Checkbox, Card } from '@mui/material'
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
@@ -7,9 +7,7 @@ import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 function FeedbackWidget({ sx }) {
   const { palette } = useTheme()
   return (
-    <Box className={'feedbackForm'} sx={{
-      position: 'sticky', top: 20, minWidth: 300, textAlign: 'center', padding: 4, ...sx
-    }}>
+    <Card sx={{ position: 'sticky', top: 20, minWidth: 300, textAlign: 'center', padding: 4, ...sx }}>
       <Typography variant={'h3'} sx={{ marginBottom: 2 }}>Запись на консультацию</Typography>
       <Typography sx={{ marginBottom: 2 }}>Укажите свои данные, мы перезвоним и подберём для вас удобное время приёма.
         Или позвоните нам сами —
@@ -34,7 +32,7 @@ function FeedbackWidget({ sx }) {
       </Box>
 
       <Button variant='contained' startIcon={<PhoneInTalkIcon />} sx={{ mt: 4 }} size={'large'}>Записаться</Button>
-    </Box>
+    </Card>
   )
 }
 

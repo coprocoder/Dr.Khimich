@@ -2,7 +2,9 @@ $textMain: #fff;
 $primary: #4e342e; // mui brown[800]
 $primaryLight: #a1887f; // mui brown[300]
 $primaryHover: #795548; // mui brown[500]
-$primaryDark: #211513;
+$primaryDark: #211513; // #261816;
+$bgPrimary: #111111;
+$bgSecondary: #212121;
 
 :root {
   --textMain: #{$textMain};
@@ -10,6 +12,9 @@ $primaryDark: #211513;
   --primaryLight: #{$primaryLight};
   --primaryHover: #{$primaryHover};
   --primaryDark: #{$primaryDark};
+  --bgPrimary: #{$bgPrimary};
+  --bgSecondary: #{$bgSecondary};
+
   --gray: rgb(160, 160, 160);
 }
 
@@ -17,4 +22,6 @@ $primaryDark: #211513;
   primary: $primary;
   primaryLight: $primaryLight;
   primaryDark: $primaryDark;
+  bgPrimary: #{$bgPrimary};
+  bgSecondary: #{$bgSecondary};
 }

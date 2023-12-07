@@ -2,9 +2,7 @@ import React from 'react'
 import { Container, Typography } from '@mui/material'
 
 const HomeIntro = () => {
-  const bgGradient = [
-    `linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.7))`
-  ].join(',')
+  const bgGradient = [`linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.7))`]
 
   return (
     <Container

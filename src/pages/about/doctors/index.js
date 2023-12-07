@@ -27,7 +27,7 @@ const DoctorCard = ({ config }) => {
 
   return (
     <Card sx={{
-      display: 'flex', mr: 2,
+      display: 'flex', mr: 4,
       maxWidth: 'sm',
       [theme.breakpoints.down('md')]: {
         minWidth: 300,
