@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dr.Khimich/static/css/main.f3068dc5.css",
-    "main.js": "/Dr.Khimich/static/js/main.2d63107b.js",
+    "main.js": "/Dr.Khimich/static/js/main.f3474693.js",
     "static/css/94.a98c2f10.chunk.css": "/Dr.Khimich/static/css/94.a98c2f10.chunk.css",
     "static/js/94.075c0999.chunk.js": "/Dr.Khimich/static/js/94.075c0999.chunk.js",
     "static/css/136.20b979a4.chunk.css": "/Dr.Khimich/static/css/136.20b979a4.chunk.css",
@@ -13,7 +13,7 @@
     "static/css/181.2998aa01.chunk.css": "/Dr.Khimich/static/css/181.2998aa01.chunk.css",
     "static/js/181.aa7589b6.chunk.js": "/Dr.Khimich/static/js/181.aa7589b6.chunk.js",
     "static/css/272.c4eb59e9.chunk.css": "/Dr.Khimich/static/css/272.c4eb59e9.chunk.css",
-    "static/js/272.84ac0819.chunk.js": "/Dr.Khimich/static/js/272.84ac0819.chunk.js",
+    "static/js/272.f46db08d.chunk.js": "/Dr.Khimich/static/js/272.f46db08d.chunk.js",
     "static/js/787.c48ac27f.chunk.js": "/Dr.Khimich/static/js/787.c48ac27f.chunk.js",
     "static/js/329.b992d360.chunk.js": "/Dr.Khimich/static/js/329.b992d360.chunk.js",
     "static/js/459.79e94f69.chunk.js": "/Dr.Khimich/static/js/459.79e94f69.chunk.js",
@@ -35,7 +35,7 @@
     "index.html": "/Dr.Khimich/index.html",
     "static/media/icon-vk.svg": "/Dr.Khimich/static/media/icon-vk.506de7ed26dd081a426ce00488a79dc2.svg",
     "main.f3068dc5.css.map": "/Dr.Khimich/static/css/main.f3068dc5.css.map",
-    "main.2d63107b.js.map": "/Dr.Khimich/static/js/main.2d63107b.js.map",
+    "main.f3474693.js.map": "/Dr.Khimich/static/js/main.f3474693.js.map",
     "94.a98c2f10.chunk.css.map": "/Dr.Khimich/static/css/94.a98c2f10.chunk.css.map",
     "94.075c0999.chunk.js.map": "/Dr.Khimich/static/js/94.075c0999.chunk.js.map",
     "136.20b979a4.chunk.css.map": "/Dr.Khimich/static/css/136.20b979a4.chunk.css.map",
@@ -47,7 +47,7 @@
     "181.2998aa01.chunk.css.map": "/Dr.Khimich/static/css/181.2998aa01.chunk.css.map",
     "181.aa7589b6.chunk.js.map": "/Dr.Khimich/static/js/181.aa7589b6.chunk.js.map",
     "272.c4eb59e9.chunk.css.map": "/Dr.Khimich/static/css/272.c4eb59e9.chunk.css.map",
-    "272.84ac0819.chunk.js.map": "/Dr.Khimich/static/js/272.84ac0819.chunk.js.map",
+    "272.f46db08d.chunk.js.map": "/Dr.Khimich/static/js/272.f46db08d.chunk.js.map",
     "787.c48ac27f.chunk.js.map": "/Dr.Khimich/static/js/787.c48ac27f.chunk.js.map",
     "329.b992d360.chunk.js.map": "/Dr.Khimich/static/js/329.b992d360.chunk.js.map",
     "459.79e94f69.chunk.js.map": "/Dr.Khimich/static/js/459.79e94f69.chunk.js.map",
@@ -55,6 +55,6 @@
   },
   "entrypoints": [
     "static/css/main.f3068dc5.css",
-    "static/js/main.2d63107b.js"
+    "static/js/main.f3474693.js"
   ]
 }
