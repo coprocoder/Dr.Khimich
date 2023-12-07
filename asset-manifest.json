@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/Dr.Khimich/static/css/main.54e8dcbb.css",
-    "main.js": "/Dr.Khimich/static/js/main.33f69245.js",
+    "main.js": "/Dr.Khimich/static/js/main.ba491c0a.js",
     "static/css/94.a98c2f10.chunk.css": "/Dr.Khimich/static/css/94.a98c2f10.chunk.css",
-    "static/js/94.1e813a19.chunk.js": "/Dr.Khimich/static/js/94.1e813a19.chunk.js",
+    "static/js/94.1ced4282.chunk.js": "/Dr.Khimich/static/js/94.1ced4282.chunk.js",
     "static/css/136.20b979a4.chunk.css": "/Dr.Khimich/static/css/136.20b979a4.chunk.css",
-    "static/js/136.6dbb10dd.chunk.js": "/Dr.Khimich/static/js/136.6dbb10dd.chunk.js",
+    "static/js/136.411b1069.chunk.js": "/Dr.Khimich/static/js/136.411b1069.chunk.js",
     "static/css/559.5bc6728d.chunk.css": "/Dr.Khimich/static/css/559.5bc6728d.chunk.css",
     "static/js/559.51844c99.chunk.js": "/Dr.Khimich/static/js/559.51844c99.chunk.js",
     "static/css/893.b87b3876.chunk.css": "/Dr.Khimich/static/css/893.b87b3876.chunk.css",
@@ -35,11 +35,11 @@
     "index.html": "/Dr.Khimich/index.html",
     "static/media/icon-vk.svg": "/Dr.Khimich/static/media/icon-vk.506de7ed26dd081a426ce00488a79dc2.svg",
     "main.54e8dcbb.css.map": "/Dr.Khimich/static/css/main.54e8dcbb.css.map",
-    "main.33f69245.js.map": "/Dr.Khimich/static/js/main.33f69245.js.map",
+    "main.ba491c0a.js.map": "/Dr.Khimich/static/js/main.ba491c0a.js.map",
     "94.a98c2f10.chunk.css.map": "/Dr.Khimich/static/css/94.a98c2f10.chunk.css.map",
-    "94.1e813a19.chunk.js.map": "/Dr.Khimich/static/js/94.1e813a19.chunk.js.map",
+    "94.1ced4282.chunk.js.map": "/Dr.Khimich/static/js/94.1ced4282.chunk.js.map",
     "136.20b979a4.chunk.css.map": "/Dr.Khimich/static/css/136.20b979a4.chunk.css.map",
-    "136.6dbb10dd.chunk.js.map": "/Dr.Khimich/static/js/136.6dbb10dd.chunk.js.map",
+    "136.411b1069.chunk.js.map": "/Dr.Khimich/static/js/136.411b1069.chunk.js.map",
     "559.5bc6728d.chunk.css.map": "/Dr.Khimich/static/css/559.5bc6728d.chunk.css.map",
     "559.51844c99.chunk.js.map": "/Dr.Khimich/static/js/559.51844c99.chunk.js.map",
     "893.b87b3876.chunk.css.map": "/Dr.Khimich/static/css/893.b87b3876.chunk.css.map",
@@ -55,6 +55,6 @@
   },
   "entrypoints": [
     "static/css/main.54e8dcbb.css",
-    "static/js/main.33f69245.js"
+    "static/js/main.ba491c0a.js"
   ]
 }
