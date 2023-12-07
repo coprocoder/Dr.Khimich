@@ -7,7 +7,7 @@ import { Menu } from '@mui/icons-material'
 
 import { ReactComponent as LogoMax } from 'assets/images/logo/logo_max.svg'
 import { menuConfig } from './menu.config'
-import FeedbackDialog from '../feedbackDialog'
+import FeedbackButton from '../feedbackButton'
 import '../header.scss'
 
 function HeaderMenuDrawer() {
@@ -55,7 +55,7 @@ function HeaderMenuDrawer() {
           <Divider />
 
           <Box sx={{ mt: 2, textAlign: 'center' }}>
-            <FeedbackDialog />
+            <FeedbackButton />
           </Box>
         </Box>
       </Drawer>

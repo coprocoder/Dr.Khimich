@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link, Box } from '@mui/material'
 import { menuConfig } from './menu.config'
-import FeedbackDialog from '../feedbackDialog'
+import FeedbackButton from '../feedbackButton'
 import '../header.scss'
 
 const HeaderMenuFull = () => {
   return (<>
     <MenuNav />
-    <FeedbackDialog />
+    <FeedbackButton />
   </>)
 }
 

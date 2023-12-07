@@ -55,7 +55,7 @@ const PriceGallery = () => {
           </Box>
         </Box>
         <Box>
-          <FeedbackWidget sx={{ bgcolor: 'primary.dark', borderRadius: 4 }} />
+          <FeedbackWidget sx={{ bgcolor: 'primary.dark', borderRadius: 4, position: 'sticky', top: 20, minWidth: 300,  }} />
         </Box>
       </Box>
     </Container>

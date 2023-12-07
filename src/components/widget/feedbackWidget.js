@@ -7,7 +7,7 @@ import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 function FeedbackWidget({ sx }) {
   const { palette } = useTheme()
   return (
-    <Card sx={{ position: 'sticky', top: 20, minWidth: 300, textAlign: 'center', padding: 4, ...sx }}>
+    <Card sx={{ textAlign: 'center', padding: 4, ...sx }}>
       <Typography variant={'h3'} sx={{ marginBottom: 2 }}>Запись на консультацию</Typography>
       <Typography sx={{ marginBottom: 2 }}>Укажите свои данные, мы перезвоним и подберём для вас удобное время приёма.
         Или позвоните нам сами —

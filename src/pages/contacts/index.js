@@ -5,7 +5,7 @@ import './contacts.scss'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import WatchLaterIcon from '@mui/icons-material/WatchLater'
 import PhoneIcon from '@mui/icons-material/Phone'
-import FeedbackDialog from '../../components/pageBase/header/feedbackDialog'
+import FeedbackButton from '../../components/pageBase/header/feedbackButton'
 
 const Contacts = () => {
   return (
@@ -16,7 +16,7 @@ const Contacts = () => {
   )
 }
 
-export const ContactsWidget = () => (
+const ContactsWidget = () => (
   <Box className={'contacts'} sx={{ bgcolor: 'background.paper', borderRadius: 4 }}>
     <Box sx={{ padding: 4, justifySelf: 'center' }}>
       <List sx={{ flex: 1 }}>
@@ -40,7 +40,7 @@ export const ContactsWidget = () => (
           <Typography variant={'h6'}>8 (908) 216-66-11</Typography>
         </ListItem>
         <ListItem disableGutters sx={{ pt: 4 }}>
-          <FeedbackDialog />
+          <FeedbackButton size={'large'} />
         </ListItem>
       </List>
     </Box>
