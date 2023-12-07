@@ -7,7 +7,7 @@ import { Menu } from '@mui/icons-material'
 
 import { ReactComponent as LogoMax } from 'assets/images/logo/logo_max.svg'
 import { menuConfig } from './menu.config'
-import FeedbackButton from '../feedbackButton'
+import FeedbackButton from '../../../widget/feedbackButton'
 import '../header.scss'
 
 function HeaderMenuDrawer() {

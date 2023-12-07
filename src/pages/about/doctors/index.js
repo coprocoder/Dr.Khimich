@@ -1,12 +1,12 @@
 import React from 'react'
 import { Box, Button, Card, CardContent, Container, Typography, useTheme } from '@mui/material'
 import { doctorsConfig } from './doctors.config'
-import CardImage from '../../../components/kit/CardImage'
+import CardImage from 'components/kit/CardImage'
 import Flicking from '@egjs/react-flicking'
 
 const DoctorsPage = () => {
   return (
-    <Container sx={{ paddingY: 8 }}>
+    <Container sx={{ paddingY: 8, overflow: 'hidden' }}>
       <Typography variant='h3' gutterBottom mt={3}>Наши специалисты</Typography>
       <Flicking useFindDOMNode horizontal bound style={{ overflow: 'visible' }}>
         {doctorsConfig.map((config, i) => (
@@ -39,7 +39,7 @@ const DoctorCard = ({ config }) => {
         <Box>
           <Typography variant='h5'>{config.name}</Typography>
           <Typography variant='subtitle1' color={'text.secondary'}>{config.state}</Typography>
-          <Typography variant='subtitle1' color={'text.secondary'} sx={{lineHeight: 1}}>
+          <Typography variant='subtitle1' color={'text.secondary'} sx={{ lineHeight: 1 }}>
             Опыт работы <span style={{ fontWeight: 'bold' }}>16 лет</span>
           </Typography>
           <Typography variant='body1' sx={{ mt: 2 }}>{config.description}</Typography>

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Box, Container, List, ListItem, Typography, useMediaQuery, useTheme } from '@mui/material'
-import FeedbackWidget from '../../../components/widget/feedbackWidget'
-import YandexMap from '../../../components/widget/map'
-import './contacts.scss'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import WatchLaterIcon from '@mui/icons-material/WatchLater'
 import PhoneIcon from '@mui/icons-material/Phone'
-import FeedbackButton from '../../../components/pageBase/header/feedbackButton'
+
+import FeedbackButton from 'components/widget/feedbackButton'
+import YandexMap from '/components/widget/map'
+import './contacts.scss'
 
 const ContactsPage = () => {
   const theme = useTheme()

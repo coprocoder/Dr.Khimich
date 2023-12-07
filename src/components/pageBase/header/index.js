@@ -4,7 +4,7 @@ import { AppBar, Toolbar, Link, Slide, useMediaQuery, useScrollTrigger, useTheme
 import { ReactComponent as LogoMin } from 'assets/images/logo/logo_min.svg'
 import { ReactComponent as LogoMax } from 'assets/images/logo/logo_max.svg'
 import './header.scss'
-import HeaderMenuDrawer from './menu/drawer'
+import HeaderMenuDrawer from './menu/drawerMenu'
 import HeaderMenuFull from './menu/lineMenu'
 
 const Header = () => {

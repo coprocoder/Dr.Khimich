@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Button, Dialog, useMediaQuery, useTheme } from '@mui/material'
-import FeedbackWidget from '../../widget/feedbackWidget'
+import FeedbackWidget from './feedbackWidget'
 
 export default function FeedbackButton({ btnText = 'Заказать звонок', size }) {
   const [open, setOpen] = React.useState(false)
@@ -16,7 +16,7 @@ export default function FeedbackButton({ btnText = 'Заказать звоно�
       <Button variant='contained' onClick={handleClickOpen} size={size || isMobile ? 'large' : 'medium'}>
         {btnText}
       </Button>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={open} onClose={handleClose} PaperProps={{ sx: { borderRadius: 4 } }}>
         <FeedbackWidget />
       </Dialog>
     </>

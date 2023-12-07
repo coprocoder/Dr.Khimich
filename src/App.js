@@ -56,11 +56,10 @@ theme = createTheme({
         }
       }
     },
-    MuiPaper: {
+    MuiDialog: {
       styleOverrides: {
         root: {
           borderRadius: theme.spacing(2),
-          backgroundImage: 'none',
         }
       }
     }

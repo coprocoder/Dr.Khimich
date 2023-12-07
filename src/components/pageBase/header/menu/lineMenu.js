@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Box } from '@mui/material'
 import { menuConfig } from './menu.config'
-import FeedbackButton from '../feedbackButton'
+import FeedbackButton from '../../../widget/feedbackButton'
 import '../header.scss'
 
 const HeaderMenuFull = () => {

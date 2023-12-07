@@ -5,7 +5,7 @@ import './contacts.scss'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import WatchLaterIcon from '@mui/icons-material/WatchLater'
 import PhoneIcon from '@mui/icons-material/Phone'
-import FeedbackButton from '../../components/pageBase/header/feedbackButton'
+import FeedbackButton from '../../components/widget/feedbackButton'
 
 const Contacts = () => {
   return (
