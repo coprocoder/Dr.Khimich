@@ -24,7 +24,7 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt install nodejs
 sudo apt install npm
-git clone https://coprocoder.github.io/WoodWorkshop/
+git clone https://coprocoder.github.io/Dr.Khimich/
 ```
 
 ### Установка NodeJS на Windows
@@ -35,7 +35,7 @@ git clone https://coprocoder.github.io/WoodWorkshop/
 
 ```
 
-git clone https://github.com/coprocoder/WoodWorkshop.git
+git clone https://github.com/coprocoder/Dr.Khimich.git
 cd <путь до папки проекта>
 npm install (или yarn)
 ```
