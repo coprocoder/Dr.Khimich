@@ -2,35 +2,50 @@ import React from 'react'
 import YandexMap from '../../components/widget/map'
 import { Container, Box, Typography, List, ListItem, ListItemText } from '@mui/material'
 import './contacts.scss'
+import LocationOnIcon from '@mui/icons-material/LocationOn'
+import WatchLaterIcon from '@mui/icons-material/WatchLater'
+import PhoneIcon from '@mui/icons-material/Phone'
+import FeedbackDialog from '../../components/pageBase/header/feedbackDialog'
 
 const Contacts = () => {
   return (
     <Container>
       <Typography variant='h3' gutterBottom mt={3}>Контакты</Typography>
-      <Box className={'contacts'} sx={{ bgcolor: 'background.paper', borderRadius: 4 }}>
-        <Box sx={{ padding: 4 }}>
-          <Typography variant='h5' gutterBottom>Dr.Khimich</Typography>
-          <List sx={{ flex: 1 }}>
-            <ListItem disableGutters sx={{ pt: 1 }}>
-              <Typography sx={{ fontWeight: 'bold', mr: 1 }}>Телефон:</Typography>
-              <Typography>890998890</Typography>
-            </ListItem>
-            <ListItem disableGutters sx={{ pt: 1 }}>
-              <Typography sx={{ fontWeight: 'bold', mr: 1 }}>Адрес:</Typography>
-              <Typography>г.Красноярск, ул.Горького,24</Typography>
-            </ListItem>
-            <Box disableGutters sx={{ pt: 1 }}>
-              <Typography sx={{ fontWeight: 'bold', mr: 1, mb: 0.5 }}>Режим работы:</Typography>
-              <Typography>пн.-пт. с 9:00 до 21:00</Typography>
-              <Typography>сб. с 10:00 до 20:00</Typography>
-              <Typography>Вск. выходной</Typography>
-            </Box>
-          </List>
-        </Box>
-        <YandexMap  />
-      </Box>
+      <ContactsWidget />
     </Container>
   )
 }
+
+export const ContactsWidget = () => (
+  <Box className={'contacts'} sx={{ bgcolor: 'background.paper', borderRadius: 4 }}>
+    <Box sx={{ padding: 4, justifySelf: 'center' }}>
+      <List sx={{ flex: 1 }}>
+        <ListItem disableGutters>
+          <LocationOnIcon sx={{ color: 'text.primary', mr: 2, fontSize: 36 }} />
+          <Typography variant={'h5'}>ул.Горького,24</Typography>
+        </ListItem>
+        <ListItem disableGutters sx={{ pt: 4 }}>
+          <WatchLaterIcon sx={{ color: 'text.primary', mr: 2, fontSize: 36 }} />
+          <Box sx={{ mr: 4 }}>
+            <Typography variant={'subtitle2'}>Будние дни</Typography>
+            <Typography variant={'h6'}>9:00 - 21:00</Typography>
+          </Box>
+          <Box>
+            <Typography variant={'subtitle2'}>Суббота</Typography>
+            <Typography variant={'h6'}>10:00 - 20:00</Typography>
+          </Box>
+        </ListItem>
+        <ListItem disableGutters sx={{ pt: 4 }}>
+          <PhoneIcon sx={{ color: 'text.primary', mr: 2, fontSize: 36 }} />
+          <Typography variant={'h6'}>8 (908) 216-66-11</Typography>
+        </ListItem>
+        <ListItem disableGutters sx={{ pt: 4 }}>
+          <FeedbackDialog />
+        </ListItem>
+      </List>
+    </Box>
+    <YandexMap />
+  </Box>
+)
 
 export default Contacts
