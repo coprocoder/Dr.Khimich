@@ -5,7 +5,7 @@ import WatchLaterIcon from '@mui/icons-material/WatchLater'
 import PhoneIcon from '@mui/icons-material/Phone'
 
 import FeedbackButton from 'components/widget/feedbackButton'
-import YandexMap from '/components/widget/map'
+import YandexMap from 'components/widget/map'
 import './contacts.scss'
 
 const ContactsPage = () => {

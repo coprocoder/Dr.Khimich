@@ -1,11 +1,12 @@
 import React from 'react'
-import YandexMap from '../../components/widget/map'
-import { Container, Box, Typography, List, ListItem, ListItemText } from '@mui/material'
-import './contacts.scss'
+import { Container, Box, Typography, List, ListItem } from '@mui/material'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import WatchLaterIcon from '@mui/icons-material/WatchLater'
 import PhoneIcon from '@mui/icons-material/Phone'
-import FeedbackButton from '../../components/widget/feedbackButton'
+
+import YandexMap from 'components/widget/map'
+import FeedbackButton from 'components/widget/feedbackButton'
+import './contacts.scss'
 
 const Contacts = () => {
   return (
