@@ -4,14 +4,16 @@ import { styled } from '@mui/material/styles'
 import Stepper from '@mui/material/Stepper'
 import Step from '@mui/material/Step'
 import StepLabel from '@mui/material/StepLabel'
-import SettingsIcon from '@mui/icons-material/Settings'
-import GroupAddIcon from '@mui/icons-material/GroupAdd'
-import VideoLabelIcon from '@mui/icons-material/VideoLabel'
 import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector'
 import { Container, useMediaQuery, useTheme } from '@mui/material'
 import StepContent from '@mui/material/StepContent'
 import Typography from '@mui/material/Typography'
 import stepsConfig from './steps.config'
+
+import PersonSearchIcon from '@mui/icons-material/PersonSearch';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import NoteAddIcon from '@mui/icons-material/NoteAdd';
+import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 export default function StepProcess() {
   const [activeStep, setActiveStep] = React.useState(0)
@@ -19,10 +21,19 @@ export default function StepProcess() {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
-    <Container sx={{ paddingTop: 16, paddingBottom: 8 }}>
-      <Typography variant='h6' color={'text.secondary'} gutterBottom textAlign={isMobile ? 'left' : 'center'} mb={4}>
-        План предоставления услуг
+    <Container sx={{
+      paddingTop: isMobile ? 8 : 16,
+      paddingBottom: isMobile ? 4 : 8
+    }}>
+      {isMobile ? (
+        <Typography variant='h3' gutterBottom mb={4}>
+          Этапы
+        </Typography>
+      ) : (
+        <Typography variant='h5' color={'text.secondary'} gutterBottom textAlign={isMobile ? 'left' : 'center'} mb={4}>
+          Лечение в 3 этапа
       </Typography>
+      )}
       {isMobile ? (
         <Stepper activeStep={activeStep} orientation='vertical'>
           {stepsConfig.map((step, index) => (
@@ -58,12 +69,16 @@ function ColorlibStepIcon(props) {
   const { active, completed, className } = props
 
   const icons = {
-    1: <SettingsIcon />, 2: <GroupAddIcon />, 3: <VideoLabelIcon />
+    1: <PersonSearchIcon />,
+    2: <FavoriteIcon />,
+    3: <HealthAndSafetyIcon />
   }
 
-  return (<ColorlibStepIconRoot ownerState={{ completed, active }} className={className}>
+  return (
+    <ColorlibStepIconRoot ownerState={{ completed, active }} className={className}>
     {icons[String(props.icon)]}
-  </ColorlibStepIconRoot>)
+  </ColorlibStepIconRoot>
+  )
 }
 
 ColorlibStepIcon.propTypes = {
@@ -84,15 +99,18 @@ ColorlibStepIcon.propTypes = {
 const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
     top: 22
-  }, [`&.${stepConnectorClasses.active}`]: {
+  },
+  [`&.${stepConnectorClasses.active}`]: {
     [`& .${stepConnectorClasses.line}`]: {
       backgroundImage: 'linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)'
     }
-  }, [`&.${stepConnectorClasses.completed}`]: {
+  },
+  [`&.${stepConnectorClasses.completed}`]: {
     [`& .${stepConnectorClasses.line}`]: {
       backgroundImage: 'linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)'
     }
-  }, [`& .${stepConnectorClasses.line}`]: {
+  },
+  [`& .${stepConnectorClasses.line}`]: {
     height: 3,
     border: 0,
     backgroundColor: theme.palette.mode === 'dark' ? theme.palette.grey[800] : '#eaeaf0',
