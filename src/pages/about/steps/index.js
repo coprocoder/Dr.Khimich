@@ -10,9 +10,8 @@ import StepContent from '@mui/material/StepContent'
 import Typography from '@mui/material/Typography'
 import stepsConfig from './steps.config'
 
-import PersonSearchIcon from '@mui/icons-material/PersonSearch';
+import SearchIcon from '@mui/icons-material/Search';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import NoteAddIcon from '@mui/icons-material/NoteAdd';
 import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
 
 export default function StepProcess() {
@@ -69,7 +68,7 @@ function ColorlibStepIcon(props) {
   const { active, completed, className } = props
 
   const icons = {
-    1: <PersonSearchIcon />,
+    1: <SearchIcon />,
     2: <FavoriteIcon />,
     3: <HealthAndSafetyIcon />
   }
