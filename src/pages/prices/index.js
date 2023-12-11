@@ -47,8 +47,7 @@ const PriceGallery = () => {
               <Link href='https://stomcomplex24.ru/price' target='_blank' rel='noreferrer'> по ссылке</Link>.
             </Typography>
             <Typography color={'text.secondary'}>Составление точного плана лечения с указанием стоимости услуг требует
-              очной консультаций с лечащим
-              врачом и проведения диагностики.</Typography>
+              очной консультаций с лечащим врачом и проведения диагностики.</Typography>
             <Typography color={'text.secondary'}>На услуги предоставляются
               <Link href='/#/guarantees'> гарантии</Link>.
             </Typography>

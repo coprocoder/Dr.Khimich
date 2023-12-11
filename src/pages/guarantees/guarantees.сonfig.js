@@ -8,6 +8,7 @@ export const guaranteesConfig = [
       { title: 'Лечение кариеса методом импрегнации', value: '1 год' },
       { title: 'Виниры из композитного материала', value: '1 год' }
     ],
+    // TODO: warning cards
     descrtiptions: [
       {
         type: 'info',
