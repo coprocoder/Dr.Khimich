@@ -1,11 +1,12 @@
 import * as React from 'react'
-import { Box, Typography, TextField, Button, Link, useTheme, Checkbox, Card } from '@mui/material'
+import { Box, Typography, TextField, Button, Link, useTheme, Checkbox, Card, Snackbar, Alert } from '@mui/material'
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined'
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 
-function FeedbackWidget({ sx }) {
+function FeedbackWidget({ sx, onClose }) {
   const { palette } = useTheme()
+
   return (
     <Card sx={{ textAlign: 'center', padding: 4, ...sx }}>
       <Typography variant={'h3'} sx={{ marginBottom: 2 }}>Запись на консультацию</Typography>
@@ -31,7 +32,7 @@ function FeedbackWidget({ sx }) {
         </label>
       </Box>
 
-      <Button variant='contained' startIcon={<PhoneInTalkIcon />} sx={{ mt: 4 }} size={'large'}>Записаться</Button>
+      <Button variant='contained' startIcon={<PhoneInTalkIcon />} sx={{ mt: 4 }} size={'large'} onClick={onClose}>Записаться</Button>
     </Card>
   )
 }

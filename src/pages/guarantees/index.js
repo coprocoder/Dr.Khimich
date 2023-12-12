@@ -21,9 +21,9 @@ const Guarantees = () => {
       <Typography variant='h3' gutterBottom mt={3}>Гарантии</Typography>
       <Stack direction='row' useFlexGap flexWrap='wrap' spacing={1} pb={2}>
         {guaranteesConfig.map((group, i) => (
-          <Chip key={`price${i}`} label={group.groupName}
+          <Chip key={`price${i}`} onClick={() => handleClick(group)}
                 variant={group.groupName === selectedGroup?.groupName ? 'filled' : 'outlined'}
-                onClick={() => handleClick(group)} />
+                label={<Typography>{group.groupName}</Typography>} />
         ))}
       </Stack>
       <Box>

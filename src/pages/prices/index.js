@@ -22,9 +22,9 @@ const PriceGallery = () => {
       <Typography variant='h3' gutterBottom mt={3}>Цены</Typography>
       <Stack direction='row' useFlexGap flexWrap='wrap' spacing={1} pb={2}>
         {priceOnfig.map((group, i) => (
-          <Chip key={`price${i}`} label={group.groupName}
+          <Chip key={`price${i}`} onClick={() => handleClick(group)}
                 variant={group.groupName === selectedGroup?.groupName ? 'filled' : 'outlined'}
-                onClick={() => handleClick(group)} />
+                label={<Typography>{group.groupName}</Typography>} />
         ))}
       </Stack>
       <Box className={'pricelist'}>
@@ -49,12 +49,13 @@ const PriceGallery = () => {
             <Typography color={'text.secondary'}>Составление точного плана лечения с указанием стоимости услуг требует
               очной консультаций с лечащим врачом и проведения диагностики.</Typography>
             <Typography color={'text.secondary'}>На услуги предоставляются
-              <Link href='/#/guarantees'> гарантии</Link>.
+              <Link href={`${process.env.PUBLIC_URL}/#/guarantees`}> гарантии</Link>.
             </Typography>
           </Box>
         </Box>
         <Box>
-          <FeedbackWidget sx={{ bgcolor: 'primary.dark', borderRadius: 4, position: 'sticky', top: 20, minWidth: 300,  }} />
+          <FeedbackWidget
+            sx={{ bgcolor: 'primary.dark', borderRadius: 4, position: 'sticky', top: 20, minWidth: 300 }} />
         </Box>
       </Box>
     </Container>
