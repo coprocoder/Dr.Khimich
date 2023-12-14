@@ -5,7 +5,7 @@ import CardImage from '../../../components/kit/CardImage'
 
 const ServicesPage = () => {
   const openService = (url) => {
-    window.open('#/prices')
+    window.open('#/prices', '_self')
   }
 
   return (
