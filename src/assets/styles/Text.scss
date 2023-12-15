@@ -1,4 +1,11 @@
-@import "Functions";
+@function calcFluidSize($f-min, $f-max, $v-min, $v-max, $units: px) {
+    $k: calc(($f-max - $f-min) / ($v-max - $v-min));
+    $b: $f-min - $k * $v-min;
+
+    $b: $b + $units;
+
+    @return calc(#{$k} * 100vw + #{$b});
+}
 
 html {
     font-size: calcFluidSize(12, 16, 480, 1280);
