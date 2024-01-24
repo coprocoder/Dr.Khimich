@@ -14,7 +14,13 @@ const Header = () => {
   return (
     <AppBar position='relative' elevation={0}
             sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}>
-      <Toolbar sx={{ flexWrap: 'wrap' }} className='header'>
+      <Toolbar className='header' sx={{
+        flexWrap: 'wrap',
+        [theme.breakpoints.up('lg')]: {
+          alignSelf: 'center',
+          width: theme.breakpoints.values.lg
+        }
+      }}>
         <Link variant='body2' color='text.primary' href={`${process.env.PUBLIC_URL}`}
               sx={{ flexGrow: 1, my: 1, mx: 1.5 }} className='header-logo'>
           {isMobile ? <LogoMin /> : <LogoMax />}
