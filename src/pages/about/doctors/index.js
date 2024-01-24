@@ -6,7 +6,7 @@ import Flicking from '@egjs/react-flicking'
 
 const DoctorsPage = () => {
   return (
-    <Container sx={{ paddingY: 8, overflow: 'hidden' }}>
+    <Container sx={{ paddingY: 8 }}>
       <Typography variant='h3' gutterBottom mt={3}>Наши специалисты</Typography>
       <Flicking useFindDOMNode horizontal bound style={{ overflow: 'visible' }}>
         {doctorsConfig.map((config, i) => (
@@ -28,7 +28,7 @@ const DoctorCard = ({ config }) => {
   return (
     <Card sx={{
       display: 'flex', mr: 4,
-      maxWidth: 'sm',
+      maxWidth: {xl: 'md', md: 'sm' },
       [theme.breakpoints.down('md')]: {
         minWidth: 300,
         maxWidth: '50%',
